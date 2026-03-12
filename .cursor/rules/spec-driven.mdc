@@ -1,0 +1,136 @@
+---
+description: Spec-Driven Development 核心规则，适用于 ai-platform 项目所有代码生成与修改
+globs:
+  - "packages/**/*.ts"
+  - "packages/**/*.vue"
+  - "packages/**/*.tsx"
+alwaysApply: true
+---
+
+# Spec-Driven Development 规则
+
+## 核心原则
+
+**所有功能代码必须有对应的 Spec 文件，代码是 Spec 的实现，不是 Spec 的来源。**
+
+---
+
+## 规则一：Spec 先行检查
+
+在生成或修改任何功能代码前，**必须先确认对应的 Spec 文件存在**：
+
+- 后端接口代码 → 检查 `specs/api/` 下对应 Spec
+- 用户门户页面/组件 → 检查 `specs/portal/` 下对应 Spec
+- 管理后台页面/组件 → 检查 `specs/admin/` 下对应 Spec
+
+如果 Spec 文件**不存在**，停止生成代码，告知用户：
+
+> "未找到对应的 Spec 文件，请先在 specs/ 目录下创建 [模块名].spec.md，再进行开发。"
+
+---
+
+## 规则二：严格遵守 Spec 定义
+
+当 Spec 存在时，代码生成必须**严格遵守**以下内容，不得自行扩展或省略：
+
+### 后端代码
+- 接口路径、HTTP 方法必须与 Spec 中「接口定义」完全一致
+- 请求参数字段名、类型必须与 Spec 一致
+- 响应结构必须是 `{ code, message, data }` 包装格式
+- 权限要求必须与 Spec 中标注的角色一致（Viewer / Editor / Admin）
+
+### 前端代码
+- 组件必须实现 Spec「页面/组件行为」中描述的**所有状态**：加载中、成功、空状态、错误状态
+- 调用的接口路径和参数必须与对应的 API Spec 一致
+- 不得使用 Spec 中未定义的字段
+
+### 类型定义
+- 所有数据模型优先使用 `packages/shared/src/index.ts` 中已定义的类型
+- 如需新增类型，同步更新 shared 包
+
+---
+
+## 规则三：代码可追溯性
+
+每个实现 Spec 功能的文件**顶部注释**中标注对应的 Spec 路径：
+
+```typescript
+// Spec: specs/api/courses.spec.md
+```
+
+```vue
+<!-- Spec: specs/portal/course-list.spec.md -->
+```
+
+---
+
+## 规则四：权限代码规范
+
+**后端**：使用 `@Roles()` 装饰器标注接口所需角色，配合全局 `RolesGuard`：
+
+```typescript
+// Spec: specs/api/courses.spec.md
+@Post()
+@Roles(UserRole.Editor, UserRole.Admin)
+create(@Body() dto: CreateCourseDto) { ... }
+```
+
+**前端门户**：路由守卫检查 Token 有效性，无效则跳转 SSO：
+
+```typescript
+router.beforeEach((to) => {
+  if (!authStore.isAuthenticated) {
+    window.location.href = SSO_LOGIN_URL + `?redirect_uri=${encodeURIComponent(to.fullPath)}`
+  }
+})
+```
+
+**前端管理后台**：使用 `v-permission` 指令控制按钮显隐：
+
+```vue
+<el-button v-permission="'admin'" type="danger">删除</el-button>
+<el-button v-permission="'editor:courses'" type="primary">编辑课程</el-button>
+```
+
+---
+
+## 规则五：API 响应格式
+
+所有后端接口统一使用以下响应格式，不得自行设计其他格式：
+
+```typescript
+// 成功
+{ code: 200, message: 'success', data: T }
+
+// 创建成功
+{ code: 201, message: 'created', data: T }
+
+// 错误
+{ code: 400 | 401 | 403 | 404 | 500, message: string, data: null }
+```
+
+---
+
+## 规则六：禁止项
+
+- **禁止**在 Spec 未定义的情况下新增接口字段
+- **禁止**在未更新 Spec 的情况下修改已有接口的路径、方法或字段名
+- **禁止**前端直接拼接 API 路径字符串，必须统一在 `src/api/` 目录下封装
+- **禁止**将敏感信息（密钥、密码）硬编码在代码中
+
+---
+
+## 项目 Spec 目录速查
+
+| 模块 | Spec 文件 |
+|------|-----------|
+| 认证与权限 | `specs/api/auth.spec.md` |
+| 通知公告 | `specs/api/announcements.spec.md` |
+| AI 课程 | `specs/api/courses.spec.md` |
+| 能力市场 | `specs/api/capability-market.spec.md` |
+| 优秀案例 | `specs/api/cases.spec.md` |
+| 荣誉激励 | `specs/api/honors.spec.md` |
+| 门户首页 | `specs/portal/home.spec.md` |
+| 管理 Dashboard | `specs/admin/dashboard.spec.md` |
+| 用户权限管理 | `specs/admin/user-manage.spec.md` |
+| Spec 模板 | `specs/_template.spec.md` |

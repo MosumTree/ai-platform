@@ -1,0 +1,22 @@
+{
+  "extends": "@eggjs/tsconfig",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "paths": {
+      "shared": ["./node_modules/shared/src/index.ts"]
+    }
+  },
+  "include": ["app", "config", "database", "app.ts"],
+  "exclude": ["node_modules", "dist", "test"],
+  "ts-node": {
+    "require": ["reflect-metadata"]
+  }
+}

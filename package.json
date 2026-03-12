@@ -1,0 +1,26 @@
+{
+  "name": "ai-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 辅助研发学习与宣传阵地平台",
+  "scripts": {
+    "dev:portal": "pnpm --filter portal dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "dev:backend": "pnpm --filter backend dev",
+    "build:portal": "pnpm --filter portal build",
+    "build:admin": "pnpm --filter admin build",
+    "build:backend": "pnpm --filter backend build",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

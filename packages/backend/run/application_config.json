@@ -1,0 +1,593 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true,
+      "logValue": true,
+      "overwrite": true,
+      "signed": true,
+      "autoCommit": true,
+      "encode": "<Function encode>",
+      "decode": "<Function decode>",
+      "genid": "<Function v4>"
+    },
+    "security": {
+      "domainWhiteList": [],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": false,
+        "type": "ctoken",
+        "ignoreJSON": false,
+        "useSession": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf",
+        "rotateWhenInvalid": false,
+        "supportedRequests": [
+          {
+            "path": {},
+            "methods": [
+              "POST",
+              "PATCH",
+              "DELETE",
+              "PUT",
+              "CONNECT"
+            ]
+          }
+        ],
+        "refererWhiteList": [],
+        "cookieOptions": {
+          "signed": false
+        }
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN",
+        "matching": "<Function anonymous>"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "methodnoallow": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "noopen": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "nosniff": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block",
+        "matching": "<Function anonymous>"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "ipExceptionList": null,
+        "hostnameExceptionList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-onerror@2.4.0\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-session@3.3.0\\node_modules\\egg-session\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-security@3.7.0\\node_modules\\egg-security\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-jsonp@2.0.0\\node_modules\\egg-jsonp\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-onerror@2.4.0\\node_modules\\egg-onerror\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-i18n@2.1.1\\node_modules\\egg-i18n\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-watcher@3.1.1\\node_modules\\egg-watcher\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-schedule@4.0.1\\node_modules\\egg-schedule\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-multipart@3.5.0\\node_modules\\egg-multipart\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-development@3.0.2\\node_modules\\egg-development\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-logrotator@3.2.0\\node_modules\\egg-logrotator\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-static@2.3.1\\node_modules\\egg-static\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-view@2.1.4\\node_modules\\egg-view\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-cors@2.2.4\\node_modules\\egg-cors\\config\\locales",
+        "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\locales",
+        "E:\\Projects\\ai-platform\\packages\\backend\\config\\locales"
+      ],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieDomain": "",
+      "cookieMaxAge": "1y",
+      "functionName": "__"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-watcher@3.1.1\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-watcher@3.1.1\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "stream",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "defaultParamCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": 102400,
+      "fields": 10,
+      "fileSize": 10485760,
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "allowArrayField": false,
+      "tmpdir": "C:\\Users\\HW\\AppData\\Local\\Temp\\egg-multipart-tmp\\backend",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *",
+        "disable": false
+      },
+      "checkFile": "<Function anonymous>"
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false,
+      "overrideIgnore": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "E:\\Projects\\ai-platform\\packages\\backend\\app\\public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
+    "view": {
+      "root": "E:\\Projects\\ai-platform\\packages\\backend\\app\\view",
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "",
+      "mapping": {}
+    },
+    "cors": {
+      "origin": "<Function origin>",
+      "credentials": true,
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS",
+      "hasCustomOriginHandler": true
+    },
+    "env": "local",
+    "name": "backend",
+    "keys": "<String len: 0>",
+    "cookies": {},
+    "proxy": false,
+    "maxIpsCount": 0,
+    "maxProxyCount": 0,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "backend",
+      "version": "0.0.1",
+      "private": true,
+      "description": "AI 辅助研发平台 - 统一后端 API",
+      "scripts": {
+        "dev": "egg-bin dev --typescript",
+        "build": "tsc -p tsconfig.json",
+        "start": "egg-scripts start --daemon=false",
+        "lint": "eslint \"{app,config}/**/*.ts\""
+      },
+      "dependencies": {
+        "egg": "^3.28.0",
+        "egg-cors": "^2.2.3",
+        "egg-scripts": "^3.1.0",
+        "dotenv": "^16.4.5",
+        "jsonwebtoken": "^9.0.2",
+        "bcryptjs": "^2.4.3",
+        "class-validator": "^0.14.0",
+        "class-transformer": "^0.5.0",
+        "mysql2": "^3.9.0",
+        "reflect-metadata": "^0.2.0",
+        "typeorm": "^0.3.20",
+        "shared": "workspace:*"
+      },
+      "devDependencies": {
+        "@eggjs/tsconfig": "^1.3.2",
+        "@types/bcryptjs": "^2.4.0",
+        "@types/jsonwebtoken": "^9.0.0",
+        "@types/node": "^20.0.0",
+        "egg-bin": "^6.7.1",
+        "typescript": "^5.3.0"
+      }
+    },
+    "baseDir": "E:\\Projects\\ai-platform\\packages\\backend",
+    "HOME": "C:\\Users\\HW",
+    "rundir": "E:\\Projects\\ai-platform\\packages\\backend\\run",
+    "dump": {
+      "ignore": "<Set>",
+      "timing": {
+        "slowBootActionMinDuration": 5000
+      }
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>",
+      "cacheControl": "public, max-age=2592000"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "1mb",
+      "jsonLimit": "1mb",
+      "textLimit": "1mb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      },
+      "returnRawBody": true
+    },
+    "logger": {
+      "dir": "E:\\Projects\\ai-platform\\packages\\backend\\logs\\backend",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "backend-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "enablePerformanceTimer": false,
+      "enableFastContextLogger": false,
+      "type": "application",
+      "localStorage": "<AsyncLocalStorage>"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "useHttpClientNext": false
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "cors",
+      "meta",
+      "siteFile",
+      "notfound",
+      "static",
+      "bodyParser",
+      "overrideMethod",
+      "session",
+      "securities",
+      "i18n",
+      "eggLoaderTrace"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 3000,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "middleware": [
+      "errorHandler",
+      "response"
+    ],
+    "database": {
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "<String len: 15>",
+      "database": "ai_platform",
+      "synchronize": true,
+      "logging": true
+    },
+    "jwt": {
+      "secret": "<String len: 29>",
+      "expiresIn": "8h"
+    },
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
+  },
+  "plugins": {
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-onerror@2.4.0\\node_modules\\egg-onerror",
+      "version": "2.4.0"
+    },
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-session@3.3.0\\node_modules\\egg-session",
+      "version": "3.3.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-i18n@2.1.1\\node_modules\\egg-i18n",
+      "version": "2.1.1"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-watcher@3.1.1\\node_modules\\egg-watcher",
+      "version": "3.1.1",
+      "dependents": [
+        "development"
+      ]
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-multipart@3.5.0\\node_modules\\egg-multipart",
+      "version": "3.5.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-security@3.7.0\\node_modules\\egg-security",
+      "version": "3.7.0"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-development@3.0.2\\node_modules\\egg-development",
+      "version": "3.0.2"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-logrotator@3.2.0\\node_modules\\egg-logrotator",
+      "version": "3.2.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-schedule@4.0.1\\node_modules\\egg-schedule",
+      "version": "4.0.1",
+      "dependents": [
+        "logrotator"
+      ]
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-static@2.3.1\\node_modules\\egg-static",
+      "version": "2.3.1"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-jsonp@2.0.0\\node_modules\\egg-jsonp",
+      "version": "2.0.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg@3.34.0\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-view@2.1.4\\node_modules\\egg-view",
+      "version": "2.1.4"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\Projects\\ai-platform\\packages\\backend\\config\\plugin.ts",
+      "path": "E:\\Projects\\ai-platform\\node_modules\\.pnpm\\egg-cors@2.2.4\\node_modules\\egg-cors",
+      "version": "2.2.4"
+    }
+  },
+  "appInfo": {
+    "name": "backend",
+    "baseDir": "E:\\Projects\\ai-platform\\packages\\backend",
+    "env": "local",
+    "scope": "",
+    "HOME": "C:\\Users\\HW",
+    "pkg": {
+      "name": "backend",
+      "version": "0.0.1",
+      "private": true,
+      "description": "AI 辅助研发平台 - 统一后端 API",
+      "scripts": {
+        "dev": "egg-bin dev --typescript",
+        "build": "tsc -p tsconfig.json",
+        "start": "egg-scripts start --daemon=false",
+        "lint": "eslint \"{app,config}/**/*.ts\""
+      },
+      "dependencies": {
+        "egg": "^3.28.0",
+        "egg-cors": "^2.2.3",
+        "egg-scripts": "^3.1.0",
+        "dotenv": "^16.4.5",
+        "jsonwebtoken": "^9.0.2",
+        "bcryptjs": "^2.4.3",
+        "class-validator": "^0.14.0",
+        "class-transformer": "^0.5.0",
+        "mysql2": "^3.9.0",
+        "reflect-metadata": "^0.2.0",
+        "typeorm": "^0.3.20",
+        "shared": "workspace:*"
+      },
+      "devDependencies": {
+        "@eggjs/tsconfig": "^1.3.2",
+        "@types/bcryptjs": "^2.4.0",
+        "@types/jsonwebtoken": "^9.0.0",
+        "@types/node": "^20.0.0",
+        "egg-bin": "^6.7.1",
+        "typescript": "^5.3.0"
+      }
+    },
+    "root": "E:\\Projects\\ai-platform\\packages\\backend"
+  }
+}

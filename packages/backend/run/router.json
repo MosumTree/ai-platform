@@ -1,0 +1,223 @@
+[
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/banners",
+    "regexp": "/^\\/api\\/banners(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/auth/callback",
+    "regexp": "/^\\/api\\/auth\\/callback(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/auth/refresh",
+    "regexp": "/^\\/api\\/auth\\/refresh(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/announcements",
+    "regexp": "/^\\/api\\/announcements(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/courses",
+    "regexp": "/^\\/api\\/courses(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/capabilities",
+    "regexp": "/^\\/api\\/capabilities(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/cases",
+    "regexp": "/^\\/api\\/cases(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/honors",
+    "regexp": "/^\\/api\\/honors(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/auth/me",
+    "regexp": "/^\\/api\\/auth\\/me(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/auth/logout",
+    "regexp": "/^\\/api\\/auth\\/logout(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/admin/dashboard",
+    "regexp": "/^\\/api\\/admin\\/dashboard(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/admin/banners",
+    "regexp": "/^\\/api\\/admin\\/banners(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/admin/banners",
+    "regexp": "/^\\/api\\/admin\\/banners(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/admin/banners/:id",
+    "regexp": "/^\\/api\\/admin\\/banners\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/admin/banners/:id",
+    "regexp": "/^\\/api\\/admin\\/banners\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  }
+]
