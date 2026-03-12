@@ -1,7 +1,7 @@
 // Spec: specs/api/auth.spec.md + specs/admin/dashboard.spec.md
 import { createRouter, createWebHistory } from 'vue-router'
-import { useAuthStore } from '@/stores/auth'
-import { UserRole } from 'shared'
+// import { useAuthStore } from '@/stores/auth'
+// import { UserRole } from 'shared'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -69,39 +69,58 @@ const router = createRouter({
           component: () => import('@/views/banners/BannersView.vue'),
           meta: { requiresAuth: true, module: 'banners' },
         },
+        {
+          path: 'tool-guides',
+          name: 'ToolGuides',
+          component: () => import('@/views/tool-guides/ToolGuidesView.vue'),
+          meta: { requiresAuth: true, module: 'tool-guides' },
+        },
+        {
+          path: 'labs',
+          name: 'Labs',
+          component: () => import('@/views/labs/LabsView.vue'),
+          meta: { requiresAuth: true, module: 'labs' },
+        },
+        {
+          path: 'wiki-cases',
+          name: 'WikiCases',
+          component: () => import('@/views/wiki-cases/WikiCasesView.vue'),
+          meta: { requiresAuth: true, module: 'wiki-cases' },
+        },
       ],
     },
   ],
 })
 
-router.beforeEach((to) => {
-  const authStore = useAuthStore()
-  const requiresAuth = to.meta.requiresAuth !== false
+router.beforeEach((_to) => {
+  // TODO: SSO 认证逻辑暂时注释，登录模块设计完成后恢复
+  // const authStore = useAuthStore()
+  // const requiresAuth = _to.meta.requiresAuth !== false
 
-  if (requiresAuth && !authStore.isAuthenticated) {
-    authStore.redirectToSSO(to.fullPath)
-    return false
-  }
+  // if (requiresAuth && !authStore.isAuthenticated) {
+  //   authStore.redirectToSSO(_to.fullPath)
+  //   return false
+  // }
 
-  if (authStore.isAuthenticated) {
-    // Viewer 无法进入管理后台
-    if (authStore.user?.role === UserRole.Viewer) {
-      return { name: 'Dashboard' }
-    }
+  // if (authStore.isAuthenticated) {
+  //   // Viewer 无法进入管理后台
+  //   if (authStore.user?.role === UserRole.Viewer) {
+  //     return { name: 'Dashboard' }
+  //   }
 
-    // 需要 Admin 权限的页面
-    if (to.meta.requiresAdmin && !authStore.isAdmin) {
-      return { name: 'Dashboard' }
-    }
+  //   // 需要 Admin 权限的页面
+  //   if (_to.meta.requiresAdmin && !authStore.isAdmin) {
+  //     return { name: 'Dashboard' }
+  //   }
 
-    // 需要模块权限的页面
-    if (to.meta.module) {
-      const module = to.meta.module as string
-      if (!authStore.hasModulePermission(module)) {
-        return { name: 'Dashboard' }
-      }
-    }
-  }
+  //   // 需要模块权限的页面
+  //   if (_to.meta.module) {
+  //     const module = _to.meta.module as string
+  //     if (!authStore.hasModulePermission(module)) {
+  //       return { name: 'Dashboard' }
+  //     }
+  //   }
+  // }
 
   return true
 })

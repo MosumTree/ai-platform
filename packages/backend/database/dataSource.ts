@@ -8,6 +8,9 @@ import { CourseEntity } from '../app/entity/Course';
 import { CapabilityEntity } from '../app/entity/Capability';
 import { CaseEntity } from '../app/entity/Case';
 import { HonorEntity } from '../app/entity/Honor';
+import { ToolGuideEntity } from '../app/entity/ToolGuide';
+import { LabEntity } from '../app/entity/Lab';
+import { WikiCaseEntity } from '../app/entity/WikiCase';
 
 export const AppDataSource = new DataSource({
   type: 'mysql',
@@ -24,6 +27,9 @@ export const AppDataSource = new DataSource({
     CapabilityEntity,
     CaseEntity,
     HonorEntity,
+    ToolGuideEntity,
+    LabEntity,
+    WikiCaseEntity,
   ],
   synchronize: process.env.NODE_ENV !== 'production',
   logging: process.env.NODE_ENV === 'development',

@@ -124,34 +124,38 @@ onUnmounted(pauseAutoPlay)
 </script>
 
 <style scoped>
-/* 骨架屏 */
+/* ── 骨架屏 ─────────────────────────────────── */
 .banner-skeleton {
   width: 100%;
-  height: 480px;
+  height: 360px;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .skeleton-inner {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+  background: linear-gradient(90deg, #2c3e50 25%, #3a4f65 50%, #2c3e50 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
 }
 
-/* 轮播容器 */
+/* ── 轮播容器 ────────────────────────────────── */
 .banner-carousel {
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 360px;
+  border-radius: 1rem;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* 幻灯片 */
+/* ── 幻灯片 ──────────────────────────────────── */
 .slides-wrapper {
   position: relative;
   width: 100%;
@@ -164,7 +168,7 @@ onUnmounted(pauseAutoPlay)
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
   pointer-events: none;
 }
 
@@ -179,142 +183,169 @@ onUnmounted(pauseAutoPlay)
   z-index: 0;
 }
 
+/* 深色底色 + 左侧径向蓝光 + 右侧图片混合 */
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.55) 100%);
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  background-image:
+    radial-gradient(circle at 20% 50%, #256af4 0%, transparent 55%),
+    linear-gradient(to right, rgba(44,62,80,0.85) 0%, rgba(44,62,80,0.2) 60%, transparent 100%);
 }
 
+/* 内容：左对齐，垂直居中 */
 .slide-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 24px;
+  align-items: flex-start;
+  padding: 0 3rem;
+  max-width: 680px;
   color: #ffffff;
 }
 
+/* 标签行 */
 .slide-tags {
   display: flex;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .slide-tag {
-  background: rgba(255,255,255,0.2);
-  border: 1px solid rgba(255,255,255,0.4);
-  padding: 2px 12px;
+  background: rgba(37, 106, 244, 0.25);
+  border: 1px solid rgba(37, 106, 244, 0.4);
+  padding: 3px 12px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
   backdrop-filter: blur(4px);
 }
 
+/* 大标题 */
 .slide-title {
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   margin-bottom: 12px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* 副标题 */
 .slide-desc {
-  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
-  opacity: 0.9;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  color: rgba(226, 232, 240, 0.9);
   margin-bottom: 28px;
-  max-width: 640px;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  max-width: 520px;
+  line-height: 1.6;
+  font-weight: 300;
 }
 
+/* CTA 按钮 */
 .slide-btn {
-  display: inline-block;
-  background: #ffffff;
-  color: #1d4ed8;
-  padding: 12px 32px;
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #256af4;
+  color: #ffffff;
+  padding: 10px 28px;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
   text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 6px 20px rgba(37, 106, 244, 0.35);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .slide-btn:hover {
-  background: #eff6ff;
+  background: #1a57d6;
   transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(37, 106, 244, 0.45);
 }
 
-/* 指示器 */
+/* ── 圆点指示器 ──────────────────────────────── */
 .indicators {
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 3rem;
   display: flex;
-  gap: 8px;
+  gap: 6px;
   z-index: 10;
 }
 
 .indicator {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   border: none;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.4);
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
   padding: 0;
+  transition: background 0.3s, width 0.3s, border-radius 0.3s;
 }
 
 .indicator.active {
   background: #ffffff;
-  transform: scale(1.3);
+  width: 20px;
+  border-radius: 3px;
 }
 
-/* 静态回退 */
+/* ── 静态回退 ────────────────────────────────── */
 .banner-fallback {
   width: 100%;
-  height: 480px;
-  background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+  height: 360px;
+  border-radius: 1rem;
+  background-color: #2c3e50;
+  background-image: radial-gradient(circle at 20% 50%, #256af4 0%, transparent 55%);
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
+  padding: 0 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .fallback-content {
-  padding: 24px;
+  max-width: 560px;
 }
 
 .fallback-title {
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
   font-weight: 700;
+  color: #ffffff;
   margin-bottom: 12px;
+  letter-spacing: -0.02em;
 }
 
 .fallback-desc {
-  font-size: 1.2rem;
-  opacity: 0.9;
+  font-size: 1.1rem;
+  color: rgba(226, 232, 240, 0.85);
   margin-bottom: 28px;
+  font-weight: 300;
 }
 
 .fallback-btn {
-  display: inline-block;
-  background: #ffffff;
-  color: #1d4ed8;
-  padding: 12px 32px;
-  border-radius: 9999px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #256af4;
+  color: #ffffff;
+  padding: 10px 28px;
+  border-radius: 0.5rem;
+  font-weight: 700;
   text-decoration: none;
-  transition: background 0.2s;
+  box-shadow: 0 6px 20px rgba(37, 106, 244, 0.35);
+  transition: background 0.2s, transform 0.2s;
 }
 
 .fallback-btn:hover {
-  background: #eff6ff;
+  background: #1a57d6;
+  transform: translateY(-1px);
 }
 </style>

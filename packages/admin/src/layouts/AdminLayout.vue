@@ -74,6 +74,30 @@
           <el-icon><Picture /></el-icon>
           <span>Banner 管理</span>
         </el-menu-item>
+
+        <el-menu-item
+          v-if="authStore.hasModulePermission('tool-guides')"
+          index="/tool-guides"
+        >
+          <el-icon><Tools /></el-icon>
+          <span>工具指导</span>
+        </el-menu-item>
+
+        <el-menu-item
+          v-if="authStore.hasModulePermission('labs')"
+          index="/labs"
+        >
+          <el-icon><Film /></el-icon>
+          <span>实战实验室</span>
+        </el-menu-item>
+
+        <el-menu-item
+          v-if="authStore.hasModulePermission('wiki-cases')"
+          index="/wiki-cases"
+        >
+          <el-icon><Files /></el-icon>
+          <span>案例百科</span>
+        </el-menu-item>
       </el-menu>
     </el-aside>
 
@@ -118,7 +142,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import {
-  Odometer, Bell, VideoPlay, Grid, Collection, Trophy, User, Picture,
+  Odometer, Bell, VideoPlay, Grid, Collection, Trophy, User, Picture, Tools, Film, Files,
 } from '@element-plus/icons-vue'
 import { useAuthStore } from '@/stores/auth'
 import { logout } from '@/api/auth'

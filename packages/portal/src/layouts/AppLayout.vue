@@ -1,21 +1,65 @@
 <!-- Spec: specs/portal/home.spec.md -->
 <template>
-  <div class="min-h-screen flex flex-col bg-gray-50">
+  <div class="min-h-screen flex flex-col app-bg">
+
     <!-- 顶部导航 -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <span class="text-xl font-bold text-primary-600">AI 辅助研发平台</span>
-        </div>
-        <nav class="hidden md:flex items-center gap-6 text-sm text-gray-600">
-          <RouterLink to="/" class="hover:text-primary-600 transition-colors">首页</RouterLink>
-          <!-- TODO: 其他导航链接 -->
+    <header class="nav-bar sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto h-full px-6 flex items-center justify-between gap-8">
+
+        <!-- Logo -->
+        <RouterLink to="/" class="logo-wrap shrink-0">
+          <div class="logo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="logo-text">AI 百工集合</span>
+        </RouterLink>
+
+        <!-- 主导航 -->
+        <nav class="main-nav">
+          <RouterLink to="/" class="nav-item" active-class="nav-item--active" exact>
+            主页
+          </RouterLink>
+          <a href="#" class="nav-item">风向标</a>
+          <a href="#" class="nav-item">实战实验室</a>
+          <a href="#" class="nav-item">案例百科</a>
+          <a href="#" class="nav-item">武器坊</a>
+          <a href="#" class="nav-item">共创广场</a>
         </nav>
-        <div class="flex items-center gap-3">
-          <span v-if="authStore.user" class="text-sm text-gray-700">
-            {{ authStore.user.name }}
-          </span>
+
+        <!-- 右侧操作区 -->
+        <div class="nav-right">
+          <!-- 搜索框 -->
+          <div class="search-box">
+            <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input class="search-input" type="text" placeholder="搜索..." />
+          </div>
+
+          <!-- 通知铃 -->
+          <button class="notify-btn" aria-label="通知">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+            <span class="notify-dot" />
+          </button>
+
+          <div class="divider" />
+
+          <!-- 用户信息 -->
+          <div class="user-info">
+            <div class="user-text">
+              <p class="user-name">{{ authStore.user?.name || 'Creator_Alpha' }}</p>
+              <p class="user-level">Lv.1 围观者</p>
+            </div>
+            <div class="user-avatar">
+              {{ (authStore.user?.name || 'C').charAt(0) }}
+            </div>
+          </div>
         </div>
+
       </div>
     </header>
 
@@ -25,11 +69,47 @@
     </main>
 
     <!-- 页脚 -->
-    <footer class="bg-white border-t border-gray-200 py-8 mt-16">
-      <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-400">
-        © {{ new Date().getFullYear() }} AI 辅助研发平台. All rights reserved.
+    <footer class="nav-footer">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
+        <!-- 品牌 -->
+        <div>
+          <div class="footer-brand">
+            <div class="logo-icon logo-icon--sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <span class="footer-brand-name">AI 百工集合</span>
+          </div>
+          <p class="footer-slogan">专业的 AI 赋能平台，助力每一位创造者在 AI 时代实现技能进化。</p>
+        </div>
+
+        <!-- 链接组 -->
+        <div class="footer-links">
+          <div>
+            <h6 class="footer-link-title">资源</h6>
+            <ul class="footer-link-list">
+              <li><a href="#">案例百科</a></li>
+              <li><a href="#">工具指导</a></li>
+              <li><a href="#">实战实验室</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="footer-link-title">关于</h6>
+            <ul class="footer-link-list">
+              <li><a href="#">平台介绍</a></li>
+              <li><a href="#">共创规则</a></li>
+              <li><a href="#">隐私协议</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        © {{ new Date().getFullYear() }} AI 百工集合 · Empowering Creators with Intelligence.
       </div>
     </footer>
+
   </div>
 </template>
 
@@ -39,3 +119,285 @@ import { useAuthStore } from '@/stores/auth'
 
 const authStore = useAuthStore()
 </script>
+
+<style scoped>
+/* ── 页面背景 ─────────────────────────────────── */
+.app-bg {
+  background-color: #F7FBFD;
+  color: #2C3E50;
+}
+
+/* ── 导航栏 ──────────────────────────────────── */
+.nav-bar {
+  height: 4.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D5DEE5;
+}
+
+/* Logo */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  background: #256af4;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.logo-icon--sm {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.375rem;
+}
+
+.logo-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2C3E50;
+  white-space: nowrap;
+}
+
+/* 主导航 */
+.main-nav {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .main-nav { display: flex; }
+}
+
+.nav-item {
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #5D6D7E;
+  text-decoration: none;
+  transition: color 0.15s, background-color 0.15s;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  color: #256af4;
+  background-color: rgba(37, 106, 244, 0.06);
+}
+
+.nav-item--active {
+  color: #256af4;
+}
+
+/* 右侧 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* 搜索框 */
+.search-box {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  background: #F0F4F7;
+  border: 1px solid #D5DEE5;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .search-box { display: flex; }
+}
+
+.search-icon {
+  color: #5D6D7E;
+  flex-shrink: 0;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  color: #2C3E50;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: rgba(93, 109, 126, 0.6);
+}
+
+/* 通知铃 */
+.notify-btn {
+  position: relative;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  background: transparent;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5D6D7E;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.notify-btn:hover {
+  background-color: #E8EDF0;
+}
+
+.notify-dot {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: #ef4444;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/* 分割线 */
+.divider {
+  width: 1px;
+  height: 1.75rem;
+  background: #D5DEE5;
+}
+
+/* 用户信息 */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.user-text {
+  display: none;
+  text-align: right;
+}
+
+@media (min-width: 640px) {
+  .user-text { display: block; }
+}
+
+.user-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2C3E50;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.user-level {
+  font-size: 0.65rem;
+  color: #5D6D7E;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.user-avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #E8EDF0;
+  border: 1px solid #D5DEE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #2C3E50;
+  flex-shrink: 0;
+}
+
+/* ── 页脚 ────────────────────────────────────── */
+.nav-footer {
+  background: #ffffff;
+  border-top: 1px solid #D5DEE5;
+  padding: 3rem 0 0;
+  margin-top: 4rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2C3E50;
+}
+
+.footer-slogan {
+  font-size: 0.85rem;
+  color: #5D6D7E;
+  max-width: 280px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.footer-link-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #2C3E50;
+  margin-bottom: 1rem;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link-list a {
+  font-size: 0.875rem;
+  color: #5D6D7E;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-link-list a:hover {
+  color: #256af4;
+}
+
+.footer-copy {
+  margin-top: 3rem;
+  padding: 1.5rem 1.5rem;
+  border-top: 1px solid #F0F4F7;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #5D6D7E;
+  font-weight: 500;
+}
+</style>

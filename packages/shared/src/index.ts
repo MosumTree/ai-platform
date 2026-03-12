@@ -111,6 +111,49 @@ export interface User {
   createdAt: string
 }
 
+// 实战实验室（视频教学）
+export interface Lab {
+  id: number
+  title: string
+  subtitle: string
+  coverUrl: string
+  duration: string
+  videoUrl: string
+  order: number
+  isPublished: boolean
+  createdAt: string
+  updatedAt: string
+}
+
+// 案例百科
+export interface WikiCase {
+  id: number
+  title: string
+  summary: string
+  coverUrl: string
+  tags: string[]
+  readUrl: string
+  order: number
+  isPublished: boolean
+  createdAt: string
+  updatedAt: string
+}
+
+// 工具指导
+export interface ToolGuide {
+  id: number
+  name: string
+  desc: string
+  icon: string
+  iconColor: string
+  installUrl: string
+  guideUrl: string
+  order: number
+  isActive: boolean
+  createdAt: string
+  updatedAt: string
+}
+
 // Banner 轮播
 export interface Banner {
   id: number
