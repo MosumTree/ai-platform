@@ -1,6 +1,16 @@
 // Spec: specs/api/auth.spec.md (全模块通用基础设施)
 import { EggAppConfig, PowerPartial } from 'egg';
 
+export const dbConfig = {
+  host: process.env.DB_HOST || 'localhost',
+  port: Number(process.env.DB_PORT) || 3306,
+  username: process.env.DB_USER || 'root',
+  password: process.env.DB_PASS || '',
+  database: process.env.DB_NAME || 'ai_platform',
+  synchronize: process.env.NODE_ENV !== 'production',
+  logging: process.env.NODE_ENV === 'development',
+};
+
 export default (): PowerPartial<EggAppConfig> => {
   return {
     // 关闭 CSRF（API 服务）
@@ -28,15 +38,7 @@ export default (): PowerPartial<EggAppConfig> => {
     middleware: ['errorHandler', 'response'],
 
     // 数据库配置（从环境变量读取）
-    database: {
-      host: process.env.DB_HOST || 'localhost',
-      port: Number(process.env.DB_PORT) || 3306,
-      username: process.env.DB_USER || 'root',
-      password: process.env.DB_PASS || '',
-      database: process.env.DB_NAME || 'ai_platform',
-      synchronize: process.env.NODE_ENV !== 'production',
-      logging: process.env.NODE_ENV === 'development',
-    },
+    database: dbConfig,
 
     // JWT 配置
     jwt: {

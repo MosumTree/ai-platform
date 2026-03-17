@@ -1,6 +1,7 @@
 // Spec: specs/api/auth.spec.md (全模块通用基础设施)
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
+import { dbConfig } from '../config/config.default';
 import { BannerEntity } from '../app/entity/Banner';
 import { UserEntity } from '../app/entity/User';
 import { AnnouncementEntity } from '../app/entity/Announcement';
@@ -14,11 +15,7 @@ import { WikiCaseEntity } from '../app/entity/WikiCase';
 
 export const AppDataSource = new DataSource({
   type: 'mysql',
-  host: process.env.DB_HOST || 'localhost',
-  port: Number(process.env.DB_PORT) || 3306,
-  username: process.env.DB_USER || 'root',
-  password: process.env.DB_PASS || '',
-  database: process.env.DB_NAME || 'ai_platform',
+  ...dbConfig,
   entities: [
     BannerEntity,
     UserEntity,
@@ -31,8 +28,6 @@ export const AppDataSource = new DataSource({
     LabEntity,
     WikiCaseEntity,
   ],
-  synchronize: process.env.NODE_ENV !== 'production',
-  logging: process.env.NODE_ENV === 'development',
   charset: 'utf8mb4',
   timezone: '+08:00',
 });
