@@ -5,6 +5,7 @@ import * as path from 'path';
 dotenv.config({ path: path.join(__dirname, '..', '.env') });
 
 import { DataSource } from 'typeorm';
+import { dbConfig } from '../config/config.default';
 import { BannerEntity } from '../app/entity/Banner';
 import { UserEntity } from '../app/entity/User';
 import { AnnouncementEntity } from '../app/entity/Announcement';
@@ -15,17 +16,14 @@ import { HonorEntity } from '../app/entity/Honor';
 import { ToolGuideEntity } from '../app/entity/ToolGuide';
 import { LabEntity } from '../app/entity/Lab';
 import { WikiCaseEntity } from '../app/entity/WikiCase';
+import { AiTrendEntity } from '../app/entity/AiTrend';
+import { WeaponCategoryEntity } from '../app/entity/WeaponCategory';
+import { WeaponItemEntity } from '../app/entity/WeaponItem';
 
-// 直接读取环境变量，避免模块导入顺序问题
+// 复用 config.default.ts 中的 dbConfig，避免配置重复
 export const AppDataSource = new DataSource({
   type: 'mysql',
-  host: process.env.DB_HOST || 'localhost',
-  port: Number(process.env.DB_PORT) || 3306,
-  username: process.env.DB_USER || 'root',
-  password: process.env.DB_PASS || '',
-  database: process.env.DB_NAME || 'ai_platform',
-  synchronize: process.env.NODE_ENV !== 'production',
-  logging: process.env.NODE_ENV === 'development',
+  ...dbConfig,
   entities: [
     BannerEntity,
     UserEntity,
@@ -37,6 +35,9 @@ export const AppDataSource = new DataSource({
     ToolGuideEntity,
     LabEntity,
     WikiCaseEntity,
+    AiTrendEntity,
+    WeaponCategoryEntity,
+    WeaponItemEntity,
   ],
   charset: 'utf8mb4',
   timezone: '+08:00',

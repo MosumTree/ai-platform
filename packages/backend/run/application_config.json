@@ -369,13 +369,13 @@
       "host": "localhost",
       "port": 3306,
       "username": "root",
-      "password": "<String len: 0>",
+      "password": "<String len: 15>",
       "database": "ai_platform",
       "synchronize": true,
       "logging": true
     },
     "jwt": {
-      "secret": "<String len: 29>",
+      "secret": "<String len: 27>",
       "expiresIn": "8h"
     },
     "coreMiddlewares": "~config~coreMiddleware",

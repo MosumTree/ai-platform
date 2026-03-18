@@ -19,6 +19,13 @@
           <span>数据概览</span>
         </el-menu-item>
 
+        <el-menu-item index="/home-content">
+          <el-icon><Grid /></el-icon>
+          <span>首页内容管理</span>
+        </el-menu-item>
+
+        <el-divider class="menu-divider" />
+
         <el-menu-item
           v-if="authStore.hasModulePermission('announcements')"
           index="/announcements"
@@ -98,6 +105,22 @@
           <el-icon><Files /></el-icon>
           <span>案例百科</span>
         </el-menu-item>
+
+        <el-menu-item
+          v-if="authStore.hasModulePermission('ai-trends')"
+          index="/ai-trends"
+        >
+          <el-icon><TrendCharts /></el-icon>
+          <span>AI 风向标</span>
+        </el-menu-item>
+
+        <el-menu-item
+          v-if="authStore.hasModulePermission('weapon-workshop')"
+          index="/weapon-workshop"
+        >
+          <el-icon><Box /></el-icon>
+          <span>百工武器坊</span>
+        </el-menu-item>
       </el-menu>
     </el-aside>
 
@@ -113,10 +136,10 @@
         <div class="header-right">
           <el-dropdown @command="handleCommand">
             <div class="user-info">
-              <el-avatar :size="32" :src="authStore.user?.avatar">
-                {{ authStore.user?.name?.charAt(0) }}
+              <el-avatar :size="32" :src="authStore.displayUser?.avatar">
+                {{ authStore.displayUser?.name?.charAt(0) || '?' }}
               </el-avatar>
-              <span class="user-name">{{ authStore.user?.name }}</span>
+              <span class="user-name">{{ authStore.displayUser?.name || '未登录' }}</span>
               <el-tag size="small" :type="roleTagType">{{ roleLabel }}</el-tag>
             </div>
             <template #dropdown>
@@ -142,7 +165,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import {
-  Odometer, Bell, VideoPlay, Grid, Collection, Trophy, User, Picture, Tools, Film, Files,
+  Odometer, Bell, VideoPlay, Grid, Collection, Trophy, User, Picture, Tools, Film, Files, TrendCharts, Box,
 } from '@element-plus/icons-vue'
 import { useAuthStore } from '@/stores/auth'
 import { logout } from '@/api/auth'
@@ -155,6 +178,17 @@ const router = useRouter()
 const activeMenu = computed(() => '/' + route.path.split('/')[1])
 
 const roleLabel = computed(() => {
+  // 优先处理 wujie 用户的角色（字符串形式）
+  const wujieRole = authStore.wujieUser?.userInfo?.role
+  if (wujieRole) {
+    const wujieMap: Record<string, string> = {
+      admin: '超级管理员',
+      editor: '内容编辑',
+      viewer: '普通员工',
+    }
+    return wujieMap[wujieRole] || wujieRole
+  }
+  // 处理本地 user 的角色（UserRole 枚举）
   const map: Record<UserRole, string> = {
     [UserRole.Admin]: '超级管理员',
     [UserRole.Editor]: '内容编辑',
@@ -164,6 +198,17 @@ const roleLabel = computed(() => {
 })
 
 const roleTagType = computed(() => {
+  // 优先处理 wujie 用户的角色（字符串形式）
+  const wujieRole = authStore.wujieUser?.userInfo?.role
+  if (wujieRole) {
+    const wujieMap: Record<string, 'danger' | 'warning' | 'info'> = {
+      admin: 'danger',
+      editor: 'warning',
+      viewer: 'info',
+    }
+    return wujieMap[wujieRole] || 'info'
+  }
+  // 处理本地 user 的角色（UserRole 枚举）
   const map: Record<UserRole, 'danger' | 'warning' | 'info'> = {
     [UserRole.Admin]: 'danger',
     [UserRole.Editor]: 'warning',
@@ -244,5 +289,10 @@ async function handleCommand(command: string) {
 .main {
   background-color: #f3f4f6;
   padding: 24px;
+}
+
+.menu-divider {
+  margin: 8px 16px;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 </style>

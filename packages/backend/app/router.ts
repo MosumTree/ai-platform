@@ -11,6 +11,11 @@ export default (app: Application) => {
 
   // ─── 公开接口 ─────────────────────────────────────────────
 
+  // 心跳/健康检查（无需鉴权，供负载均衡检测）
+  router.get(`${API_PREFIX}/heartbeat`, async (ctx) => {
+    ctx.body = { code: 200, message: 'ok', data: { timestamp: Date.now() } };
+  });
+
   // Banner 轮播（门户）
   router.get(`${API_PREFIX}/banners`, jwt, controller.banners.index);
 
@@ -22,6 +27,12 @@ export default (app: Application) => {
 
   // 案例百科（门户，公开无需登录）
   router.get(`${API_PREFIX}/wiki-cases`, controller.wikiCases.index);
+
+  // AI 风向标（门户，公开无需登录）
+  router.get(`${API_PREFIX}/ai-trends`, controller.aiTrends.index);
+
+  // 百工武器坊（门户，公开无需登录）
+  router.get(`${API_PREFIX}/weapon-workshop`, controller.weaponWorkshop.index);
 
   // SSO 认证
   router.get(`${API_PREFIX}/auth/callback`, controller.auth.callback);
@@ -67,4 +78,22 @@ export default (app: Application) => {
   router.post(`${API_PREFIX}/admin/wiki-cases`, controller.adminWikiCases.create);
   router.put(`${API_PREFIX}/admin/wiki-cases/:id`, controller.adminWikiCases.update);
   router.del(`${API_PREFIX}/admin/wiki-cases/:id`, controller.adminWikiCases.destroy);
+
+  // AI 风向标管理（CRUD，鉴权暂时关闭）
+  router.get(`${API_PREFIX}/admin/ai-trends`, controller.aiTrends.adminIndex);
+  router.post(`${API_PREFIX}/admin/ai-trends`, controller.aiTrends.create);
+  router.put(`${API_PREFIX}/admin/ai-trends/:id`, controller.aiTrends.update);
+  router.del(`${API_PREFIX}/admin/ai-trends/:id`, controller.aiTrends.destroy);
+
+  // 百工武器坊管理（CRUD，鉴权暂时关闭）
+  // 分类管理
+  router.get(`${API_PREFIX}/admin/weapon-categories`, controller.weaponWorkshop.adminCategories);
+  router.post(`${API_PREFIX}/admin/weapon-categories`, controller.weaponWorkshop.createCategory);
+  router.put(`${API_PREFIX}/admin/weapon-categories/:id`, controller.weaponWorkshop.updateCategory);
+  router.del(`${API_PREFIX}/admin/weapon-categories/:id`, controller.weaponWorkshop.destroyCategory);
+  router.get(`${API_PREFIX}/admin/weapon-categories/:id/items`, controller.weaponWorkshop.categoryItems);
+  // 武器项管理
+  router.post(`${API_PREFIX}/admin/weapon-items`, controller.weaponWorkshop.createItem);
+  router.put(`${API_PREFIX}/admin/weapon-items/:id`, controller.weaponWorkshop.updateItem);
+  router.del(`${API_PREFIX}/admin/weapon-items/:id`, controller.weaponWorkshop.destroyItem);
 };

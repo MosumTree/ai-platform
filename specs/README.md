@@ -1,6 +1,7 @@
 # Spec 文档说明
 
 本目录是项目的核心资产，所有功能开发必须先在此处编写对应的 Spec 文件。
+设计稿：https://stitch.withgoogle.com/projects/12404152126625160076
 
 ## 目录结构
 

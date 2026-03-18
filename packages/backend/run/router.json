@@ -6,6 +6,19 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/rest/cbc/aiplatform/heartbeat",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/heartbeat(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/rest/cbc/aiplatform/banners",
     "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/banners(?:\\/(?=$))?$/",
     "stack": [
@@ -48,6 +61,32 @@
     "paramNames": [],
     "path": "/rest/cbc/aiplatform/wiki-cases",
     "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/wiki-cases(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/ai-trends",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/ai-trends(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/weapon-workshop",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/weapon-workshop(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -468,6 +507,230 @@
     ],
     "path": "/rest/cbc/aiplatform/admin/wiki-cases/:id",
     "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/wiki-cases\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/admin/ai-trends",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/ai-trends(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/admin/ai-trends",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/ai-trends(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/ai-trends/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/ai-trends\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/ai-trends/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/ai-trends\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/admin/weapon-categories",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-categories(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/admin/weapon-categories",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-categories(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/weapon-categories/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-categories\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/weapon-categories/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-categories\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/weapon-categories/:id/items",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-categories\\/((?:[^\\/]+?))\\/items(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/admin/weapon-items",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-items(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/weapon-items/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-items\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/rest/cbc/aiplatform/admin/weapon-items/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/weapon-items\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

@@ -28,6 +28,12 @@ const router = createRouter({
           meta: { requiresAuth: true, minRole: UserRole.Editor },
         },
         {
+          path: 'home-content',
+          name: 'HomeContent',
+          component: () => import('@/views/home-content/HomeContentView.vue'),
+          meta: { requiresAuth: true, minRole: UserRole.Editor },
+        },
+        {
           path: 'announcements',
           name: 'Announcements',
           component: () => import('@/views/announcements/AnnouncementsView.vue'),
@@ -86,6 +92,18 @@ const router = createRouter({
           name: 'WikiCases',
           component: () => import('@/views/wiki-cases/WikiCasesView.vue'),
           meta: { requiresAuth: true, module: 'wiki-cases' },
+        },
+        {
+          path: 'ai-trends',
+          name: 'AiTrends',
+          component: () => import('@/views/ai-trends/AiTrendsView.vue'),
+          meta: { requiresAuth: true, module: 'ai-trends' },
+        },
+        {
+          path: 'weapon-workshop',
+          name: 'WeaponWorkshop',
+          component: () => import('@/views/weapon-workshop/WeaponWorkshopView.vue'),
+          meta: { requiresAuth: true, module: 'weapon-workshop' },
         },
       ],
     },

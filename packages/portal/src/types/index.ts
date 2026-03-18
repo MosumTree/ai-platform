@@ -156,3 +156,42 @@ export interface Banner {
   updatedAt: string
 }
 
+// AI 风向标
+export interface AiTrend {
+  id: number
+  title: string
+  summary: string
+  icon: string
+  source: string
+  sourceUrl: string
+  publishDate: string
+  isActive: boolean
+  order: number
+  createdAt: string
+  updatedAt: string
+}
+
+// 百工武器坊
+export interface WeaponCategory {
+  id: number
+  name: string
+  icon: string
+  description: string
+  order: number
+  isActive: boolean
+  items: WeaponItem[]
+  createdAt: string
+  updatedAt: string
+}
+
+export interface WeaponItem {
+  id: number
+  categoryId: number
+  name: string
+  description: string
+  icon?: string
+  order: number
+  isActive: boolean
+  createdAt: string
+  updatedAt: string
+}
