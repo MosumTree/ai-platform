@@ -213,8 +213,7 @@
       "class-transformer": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
       "mysql2": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
       "reflect-metadata": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "typeorm": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "shared": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "typeorm": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "@eggjs/tsconfig": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",

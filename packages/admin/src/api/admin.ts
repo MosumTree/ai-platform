@@ -1,7 +1,6 @@
 // Spec: specs/admin/dashboard.spec.md + specs/admin/user-manage.spec.md
 import http from './http'
-import type { User, PaginatedResult } from 'shared'
-import type { UserRole } from 'shared'
+import type { User, PaginatedResult, UserRole } from '@/types'
 
 interface DashboardOverview {
   announcements: { total: number; published: number }

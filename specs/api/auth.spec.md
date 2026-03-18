@@ -33,7 +33,7 @@
 ### SSO 回调 - 换取 Token
 
 ```
-GET /api/auth/callback?code=[sso_code]
+GET /rest/cbc/aiplatform/auth/callback?code=[sso_code]
 权限: 无（公开）
 说明: SSO 登录成功后跳转到此地址，服务端用 code 换取用户信息，写库后签发 JWT
 Response: {
@@ -50,7 +50,7 @@ Response: {
 ### 刷新 Token
 
 ```
-POST /api/auth/refresh
+POST /rest/cbc/aiplatform/auth/refresh
 权限: 无（使用 refreshToken）
 Body: { refreshToken: string }
 Response: {
@@ -66,7 +66,7 @@ Response: {
 ### 获取当前用户信息
 
 ```
-GET /api/auth/me
+GET /rest/cbc/aiplatform/auth/me
 权限: 已登录（Bearer Token）
 Response: {
   code: 200,
@@ -78,7 +78,7 @@ Response: {
 ### 退出登录
 
 ```
-POST /api/auth/logout
+POST /rest/cbc/aiplatform/auth/logout
 权限: 已登录
 Response: { code: 200, data: null }
 ```
@@ -113,4 +113,4 @@ Response: { code: 200, data: null }
 - [ ] Viewer 用户访问管理后台，提示「无权限访问」并跳回门户
 - [ ] Editor 用户进入管理后台，左侧菜单只显示被授权的模块
 - [ ] Admin 用户进入管理后台，可见所有菜单项
-- [ ] `/api/auth/me` 返回的角色和权限信息与数据库一致
+- [ ] `/rest/cbc/aiplatform/auth/me` 返回的角色和权限信息与数据库一致

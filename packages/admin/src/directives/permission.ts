@@ -1,7 +1,7 @@
 // Spec: specs/api/auth.spec.md
 import type { Directive, DirectiveBinding } from 'vue'
 import { useAuthStore } from '@/stores/auth'
-import { UserRole } from 'shared'
+import { UserRole } from '@/types'
 
 /**
  * 权限指令：v-permission="'admin'" 或 v-permission="'editor:courses'"

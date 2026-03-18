@@ -61,7 +61,7 @@
 <script setup lang="ts">
 // Spec: specs/portal/home.spec.md
 import { ref, onMounted } from 'vue'
-import type { WikiCase } from 'shared'
+import type { WikiCase } from '@/types'
 import { getWikiCases } from '@/api/wikiCases'
 
 const loading = ref(true)

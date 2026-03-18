@@ -1,6 +1,6 @@
 // Spec: specs/api/honors.spec.md
 import http from './http'
-import type { Honor, PaginatedResult } from 'shared'
+import type { Honor, PaginatedResult } from '@/types'
 
 interface HonorQuery {
   page?: number

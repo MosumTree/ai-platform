@@ -44,7 +44,7 @@
 ### 获取课程分类列表
 
 ```
-GET /api/courses/categories
+GET /rest/cbc/aiplatform/courses/categories
 权限: Viewer 及以上
 Response: { code: 200, data: string[] }
 说明: 返回所有已发布课程涉及的分类列表，去重
@@ -53,7 +53,7 @@ Response: { code: 200, data: string[] }
 ### 获取已发布课程列表（门户）
 
 ```
-GET /api/courses
+GET /rest/cbc/aiplatform/courses
 权限: Viewer 及以上
 Query: { page?: number, pageSize?: number, category?: string }
 Response: {
@@ -66,7 +66,7 @@ Response: {
 ### 获取课程详情（含章节，门户）
 
 ```
-GET /api/courses/:id
+GET /rest/cbc/aiplatform/courses/:id
 权限: Viewer 及以上
 Response: {
   code: 200,
@@ -79,7 +79,7 @@ Response: {
 ### 获取全部课程列表（管理后台）
 
 ```
-GET /api/admin/courses
+GET /rest/cbc/aiplatform/admin/courses
 权限: Editor（courses 模块）或 Admin
 Query: { page?: number, pageSize?: number, status?: string, category?: string, keyword?: string }
 Response: {
@@ -91,7 +91,7 @@ Response: {
 ### 创建课程
 
 ```
-POST /api/admin/courses
+POST /rest/cbc/aiplatform/admin/courses
 权限: Editor（courses 模块）或 Admin
 Body: { title: string, description: string, coverUrl: string, category: string }
 Response: { code: 201, data: Course }
@@ -100,7 +100,7 @@ Response: { code: 201, data: Course }
 ### 更新课程
 
 ```
-PUT /api/admin/courses/:id
+PUT /rest/cbc/aiplatform/admin/courses/:id
 权限: Editor（courses 模块）或 Admin
 Body: { title?: string, description?: string, coverUrl?: string, category?: string }
 Response: { code: 200, data: Course }
@@ -109,7 +109,7 @@ Response: { code: 200, data: Course }
 ### 发布 / 下线课程
 
 ```
-PATCH /api/admin/courses/:id/status
+PATCH /rest/cbc/aiplatform/admin/courses/:id/status
 权限: Editor（courses 模块）或 Admin
 Body: { status: 'published' | 'draft' }
 Response: { code: 200, data: Course }
@@ -118,7 +118,7 @@ Response: { code: 200, data: Course }
 ### 删除课程
 
 ```
-DELETE /api/admin/courses/:id
+DELETE /rest/cbc/aiplatform/admin/courses/:id
 权限: Admin
 Response: { code: 200, data: null }
 说明: 同时删除该课程的所有章节
@@ -127,7 +127,7 @@ Response: { code: 200, data: null }
 ### 获取章节列表
 
 ```
-GET /api/admin/courses/:id/chapters
+GET /rest/cbc/aiplatform/admin/courses/:id/chapters
 权限: Editor（courses 模块）或 Admin
 Response: { code: 200, data: CourseChapter[] }
 ```
@@ -135,7 +135,7 @@ Response: { code: 200, data: CourseChapter[] }
 ### 新增章节
 
 ```
-POST /api/admin/courses/:id/chapters
+POST /rest/cbc/aiplatform/admin/courses/:id/chapters
 权限: Editor（courses 模块）或 Admin
 Body: { title: string, sort: number, resourceUrl: string, resourceType: string, duration?: number }
 Response: { code: 201, data: CourseChapter }
@@ -144,7 +144,7 @@ Response: { code: 201, data: CourseChapter }
 ### 更新章节
 
 ```
-PUT /api/admin/courses/:courseId/chapters/:chapterId
+PUT /rest/cbc/aiplatform/admin/courses/:courseId/chapters/:chapterId
 权限: Editor（courses 模块）或 Admin
 Body: { title?: string, sort?: number, resourceUrl?: string, resourceType?: string, duration?: number }
 Response: { code: 200, data: CourseChapter }
@@ -153,7 +153,7 @@ Response: { code: 200, data: CourseChapter }
 ### 删除章节
 
 ```
-DELETE /api/admin/courses/:courseId/chapters/:chapterId
+DELETE /rest/cbc/aiplatform/admin/courses/:courseId/chapters/:chapterId
 权限: Editor（courses 模块）或 Admin
 Response: { code: 200, data: null }
 ```

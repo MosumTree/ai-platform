@@ -1,17 +1,16 @@
-// 用户角色枚举
+// Spec: specs/admin/dashboard.spec.md (类型定义：原 packages/shared 迁入)
+
 export enum UserRole {
-  Viewer = 'viewer',   // 普通员工，只读
-  Editor = 'editor',   // 内容编辑，管理被分配模块
-  Admin = 'admin',     // 超级管理员，全权限
+  Viewer = 'viewer',
+  Editor = 'editor',
+  Admin = 'admin',
 }
 
-// 通用分页请求参数
 export interface PaginationQuery {
   page?: number
   pageSize?: number
 }
 
-// 通用分页响应结构
 export interface PaginatedResult<T> {
   list: T[]
   total: number
@@ -19,14 +18,12 @@ export interface PaginatedResult<T> {
   pageSize: number
 }
 
-// 通用 API 响应结构
 export interface ApiResponse<T = unknown> {
   code: number
   message: string
   data: T
 }
 
-// 通知公告类型
 export interface Announcement {
   id: number
   title: string
@@ -38,7 +35,6 @@ export interface Announcement {
   updatedAt: string
 }
 
-// AI 课程类型
 export interface Course {
   id: number
   title: string
@@ -51,7 +47,6 @@ export interface Course {
   createdAt: string
 }
 
-// 课程章节
 export interface CourseChapter {
   id: number
   courseId: number
@@ -61,7 +56,6 @@ export interface CourseChapter {
   resourceType: 'video' | 'doc' | 'link'
 }
 
-// 能力市场条目
 export interface CapabilityItem {
   id: number
   name: string
@@ -74,7 +68,6 @@ export interface CapabilityItem {
   createdAt: string
 }
 
-// 优秀案例
 export interface Case {
   id: number
   title: string
@@ -88,7 +81,6 @@ export interface Case {
   createdAt: string
 }
 
-// 荣誉记录
 export interface Honor {
   id: number
   recipientName: string
@@ -99,7 +91,6 @@ export interface Honor {
   createdAt: string
 }
 
-// 用户信息
 export interface User {
   id: number
   employeeId: string
@@ -111,7 +102,6 @@ export interface User {
   createdAt: string
 }
 
-// 实战实验室（视频教学）
 export interface Lab {
   id: number
   title: string
@@ -125,7 +115,6 @@ export interface Lab {
   updatedAt: string
 }
 
-// 案例百科
 export interface WikiCase {
   id: number
   title: string
@@ -139,7 +128,6 @@ export interface WikiCase {
   updatedAt: string
 }
 
-// 工具指导
 export interface ToolGuide {
   id: number
   name: string
@@ -154,7 +142,6 @@ export interface ToolGuide {
   updatedAt: string
 }
 
-// Banner 轮播
 export interface Banner {
   id: number
   title: string
@@ -168,3 +155,4 @@ export interface Banner {
   createdAt: string
   updatedAt: string
 }
+

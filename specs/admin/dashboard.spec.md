@@ -11,7 +11,7 @@
 ### 获取数据概览
 
 ```
-GET /api/admin/dashboard/overview
+GET /rest/cbc/aiplatform/admin/dashboard/overview
 权限: Editor 及以上
 Response: {
   code: 200,
@@ -28,7 +28,7 @@ Response: {
 ### 获取最近发布记录
 
 ```
-GET /api/admin/dashboard/recent
+GET /rest/cbc/aiplatform/admin/dashboard/recent
 权限: Editor 及以上
 Response: {
   code: 200,

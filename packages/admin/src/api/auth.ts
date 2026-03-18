@@ -1,6 +1,6 @@
 // Spec: specs/api/auth.spec.md
 import http from './http'
-import type { User } from 'shared'
+import type { User } from '@/types'
 
 interface TokenResponse {
   accessToken: string

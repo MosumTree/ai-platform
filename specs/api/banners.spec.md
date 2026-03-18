@@ -29,7 +29,7 @@
 ### 门户 - 获取已启用的 Banner 列表
 
 ```
-GET /api/banners
+GET /rest/cbc/aiplatform/banners
 权限: 无（公开接口）
 Response: {
   code: 200,
@@ -41,7 +41,7 @@ Response: {
 ### 管理 - 获取全部 Banner 列表
 
 ```
-GET /api/admin/banners
+GET /rest/cbc/aiplatform/admin/banners
 权限: Editor 及以上
 Query: { page?: number, pageSize?: number }
 Response: {
@@ -59,7 +59,7 @@ Response: {
 ### 管理 - 创建 Banner
 
 ```
-POST /api/admin/banners
+POST /rest/cbc/aiplatform/admin/banners
 权限: Editor 及以上
 Body: {
   title: string,          // 必填
@@ -81,7 +81,7 @@ Response: {
 ### 管理 - 更新 Banner
 
 ```
-PUT /api/admin/banners/:id
+PUT /rest/cbc/aiplatform/admin/banners/:id
 权限: Editor 及以上
 Body: { 同创建，所有字段均为选填 }
 Response: {
@@ -94,7 +94,7 @@ Response: {
 ### 管理 - 删除 Banner
 
 ```
-DELETE /api/admin/banners/:id
+DELETE /rest/cbc/aiplatform/admin/banners/:id
 权限: Admin
 Response: { code: 200, data: null }
 错误: 401 | 403 | 404
@@ -121,7 +121,7 @@ Response: { code: 200, data: null }
 
 ## 验收标准（Acceptance Criteria）
 
-- [ ] 门户首页顶部展示轮播 Banner，数据来自 GET /api/banners
+- [ ] 门户首页顶部展示轮播 Banner，数据来自 GET /rest/cbc/aiplatform/banners
 - [ ] 多条 Banner 时自动轮播（5 秒间隔），单条时静态展示
 - [ ] 鼠标悬停时暂停轮播，移开后继续
 - [ ] Banner 加载中显示骨架屏，加载失败时静默回退到静态 Hero

@@ -1,6 +1,6 @@
 // Spec: specs/api/banners.spec.md
 import http from './http'
-import type { Banner, PaginatedResult } from 'shared'
+import type { Banner, PaginatedResult } from '@/types'
 
 interface AdminBannerQuery {
   page?: number

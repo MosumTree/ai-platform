@@ -37,7 +37,7 @@
 ### 获取已发布公告列表（门户）
 
 ```
-GET /api/announcements
+GET /rest/cbc/aiplatform/announcements
 权限: Viewer 及以上
 Query: { page?: number, pageSize?: number, type?: string }
 Response: {
@@ -55,7 +55,7 @@ Response: {
 ### 获取公告详情（门户）
 
 ```
-GET /api/announcements/:id
+GET /rest/cbc/aiplatform/announcements/:id
 权限: Viewer 及以上
 Response: { code: 200, data: Announcement }
 错误: 404 公告不存在或未发布
@@ -64,7 +64,7 @@ Response: { code: 200, data: Announcement }
 ### 获取全部公告列表（管理后台）
 
 ```
-GET /api/admin/announcements
+GET /rest/cbc/aiplatform/admin/announcements
 权限: Editor（announcements 模块）或 Admin
 Query: { page?: number, pageSize?: number, status?: string, type?: string, keyword?: string }
 Response: {
@@ -77,7 +77,7 @@ Response: {
 ### 创建公告
 
 ```
-POST /api/admin/announcements
+POST /rest/cbc/aiplatform/admin/announcements
 权限: Editor（announcements 模块）或 Admin
 Body: { title: string, content: string, type: string, pinned?: boolean, scheduledAt?: string }
 Response: { code: 201, data: Announcement }
@@ -87,7 +87,7 @@ Response: { code: 201, data: Announcement }
 ### 更新公告
 
 ```
-PUT /api/admin/announcements/:id
+PUT /rest/cbc/aiplatform/admin/announcements/:id
 权限: Editor（announcements 模块）或 Admin
 Body: { title?: string, content?: string, type?: string, pinned?: boolean, scheduledAt?: string }
 Response: { code: 200, data: Announcement }
@@ -97,7 +97,7 @@ Response: { code: 200, data: Announcement }
 ### 发布 / 下线公告
 
 ```
-PATCH /api/admin/announcements/:id/status
+PATCH /rest/cbc/aiplatform/admin/announcements/:id/status
 权限: Editor（announcements 模块）或 Admin
 Body: { status: 'published' | 'offline' }
 Response: { code: 200, data: Announcement }
@@ -106,7 +106,7 @@ Response: { code: 200, data: Announcement }
 ### 删除公告
 
 ```
-DELETE /api/admin/announcements/:id
+DELETE /rest/cbc/aiplatform/admin/announcements/:id
 权限: Admin
 Response: { code: 200, data: null }
 错误: 403 | 404

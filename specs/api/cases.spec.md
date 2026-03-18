@@ -31,7 +31,7 @@
 ### 获取已发布案例列表（门户）
 
 ```
-GET /api/cases
+GET /rest/cbc/aiplatform/cases
 权限: Viewer 及以上
 Query: { page?: number, pageSize?: number, tags?: string, keyword?: string }
 Response: {
@@ -44,7 +44,7 @@ Response: {
 ### 获取案例详情（门户）
 
 ```
-GET /api/cases/:id
+GET /rest/cbc/aiplatform/cases/:id
 权限: Viewer 及以上
 Response: { code: 200, data: Case }
 错误: 404
@@ -53,7 +53,7 @@ Response: { code: 200, data: Case }
 ### 获取全部案例列表（管理后台）
 
 ```
-GET /api/admin/cases
+GET /rest/cbc/aiplatform/admin/cases
 权限: Editor（cases 模块）或 Admin
 Query: { page?: number, pageSize?: number, status?: string, keyword?: string }
 Response: { code: 200, data: { list: Case[], total: number, page: number, pageSize: number } }
@@ -62,7 +62,7 @@ Response: { code: 200, data: { list: Case[], total: number, page: number, pageSi
 ### 创建案例
 
 ```
-POST /api/admin/cases
+POST /rest/cbc/aiplatform/admin/cases
 权限: Editor（cases 模块）或 Admin
 Body: { title: string, summary: string, content: string, coverUrl?: string, tags?: string[], author: string, authorAvatar?: string }
 Response: { code: 201, data: Case }
@@ -72,7 +72,7 @@ Response: { code: 201, data: Case }
 ### 提交审核
 
 ```
-PATCH /api/admin/cases/:id/submit
+PATCH /rest/cbc/aiplatform/admin/cases/:id/submit
 权限: Editor（cases 模块）或 Admin
 Response: { code: 200, data: Case }
 说明: draft → reviewing
@@ -81,7 +81,7 @@ Response: { code: 200, data: Case }
 ### 审核通过 / 拒绝
 
 ```
-PATCH /api/admin/cases/:id/review
+PATCH /rest/cbc/aiplatform/admin/cases/:id/review
 权限: Admin
 Body: { action: 'approve' | 'reject', rejectReason?: string }
 Response: { code: 200, data: Case }
@@ -91,7 +91,7 @@ Response: { code: 200, data: Case }
 ### 更新案例
 
 ```
-PUT /api/admin/cases/:id
+PUT /rest/cbc/aiplatform/admin/cases/:id
 权限: Editor（cases 模块）或 Admin
 Body: { title?: string, summary?: string, content?: string, ... }
 Response: { code: 200, data: Case }
@@ -101,7 +101,7 @@ Response: { code: 200, data: Case }
 ### 删除案例
 
 ```
-DELETE /api/admin/cases/:id
+DELETE /rest/cbc/aiplatform/admin/cases/:id
 权限: Admin
 Response: { code: 200, data: null }
 ```

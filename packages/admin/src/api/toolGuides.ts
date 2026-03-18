@@ -1,6 +1,6 @@
 // Spec: specs/api/tool-guides.spec.md
 import http from './http'
-import type { ToolGuide, PaginatedResult } from 'shared'
+import type { ToolGuide, PaginatedResult } from '@/types'
 
 interface ToolGuideQuery {
   page?: number

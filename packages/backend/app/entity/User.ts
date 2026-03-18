@@ -6,7 +6,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { UserRole } from 'shared';
+import { UserRole } from '../shared';
 
 @Entity('users')
 export class UserEntity {

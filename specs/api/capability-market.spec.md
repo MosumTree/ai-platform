@@ -30,7 +30,7 @@
 ### 获取能力列表（门户）
 
 ```
-GET /api/capabilities
+GET /rest/cbc/aiplatform/capabilities
 权限: Viewer 及以上
 Query: { page?: number, pageSize?: number, type?: string, tags?: string, keyword?: string }
 Response: {
@@ -43,7 +43,7 @@ Response: {
 ### 获取能力详情（门户）
 
 ```
-GET /api/capabilities/:id
+GET /rest/cbc/aiplatform/capabilities/:id
 权限: Viewer 及以上
 Response: { code: 200, data: CapabilityItem }
 错误: 404
@@ -52,7 +52,7 @@ Response: { code: 200, data: CapabilityItem }
 ### 获取所有标签
 
 ```
-GET /api/capabilities/tags
+GET /rest/cbc/aiplatform/capabilities/tags
 权限: Viewer 及以上
 Response: { code: 200, data: string[] }
 说明: 返回所有 active 词条涉及的标签，去重排序
@@ -61,7 +61,7 @@ Response: { code: 200, data: string[] }
 ### 获取全部能力列表（管理后台）
 
 ```
-GET /api/admin/capabilities
+GET /rest/cbc/aiplatform/admin/capabilities
 权限: Editor（capabilities 模块）或 Admin
 Query: { page?: number, pageSize?: number, type?: string, status?: string, keyword?: string }
 Response: {
@@ -73,7 +73,7 @@ Response: {
 ### 创建能力词条
 
 ```
-POST /api/admin/capabilities
+POST /rest/cbc/aiplatform/admin/capabilities
 权限: Editor（capabilities 模块）或 Admin
 Body: { name: string, description: string, type: string, tags?: string[], documentUrl?: string, repoUrl?: string, detail?: string }
 Response: { code: 201, data: CapabilityItem }
@@ -82,7 +82,7 @@ Response: { code: 201, data: CapabilityItem }
 ### 更新能力词条
 
 ```
-PUT /api/admin/capabilities/:id
+PUT /rest/cbc/aiplatform/admin/capabilities/:id
 权限: Editor（capabilities 模块）或 Admin
 Body: { name?: string, description?: string, type?: string, tags?: string[], documentUrl?: string, repoUrl?: string, detail?: string, status?: string }
 Response: { code: 200, data: CapabilityItem }
@@ -91,7 +91,7 @@ Response: { code: 200, data: CapabilityItem }
 ### 删除能力词条
 
 ```
-DELETE /api/admin/capabilities/:id
+DELETE /rest/cbc/aiplatform/admin/capabilities/:id
 权限: Admin
 Response: { code: 200, data: null }
 ```

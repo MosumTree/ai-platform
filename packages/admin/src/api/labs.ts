@@ -1,6 +1,6 @@
 // Spec: specs/api/labs.spec.md
 import http from './http'
-import type { Lab, PaginatedResult } from 'shared'
+import type { Lab, PaginatedResult } from '@/types'
 
 interface LabQuery { page?: number; pageSize?: number }
 

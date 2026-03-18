@@ -29,7 +29,7 @@
 ### 获取荣誉列表（门户）
 
 ```
-GET /api/honors
+GET /rest/cbc/aiplatform/honors
 权限: Viewer 及以上
 Query: { page?: number, pageSize?: number }
 Response: {
@@ -42,7 +42,7 @@ Response: {
 ### 获取全部荣誉列表（管理后台）
 
 ```
-GET /api/admin/honors
+GET /rest/cbc/aiplatform/admin/honors
 权限: Editor（honors 模块）或 Admin
 Query: { page?: number, pageSize?: number, keyword?: string }
 Response: { code: 200, data: { list: Honor[], total: number, page: number, pageSize: number } }
@@ -51,7 +51,7 @@ Response: { code: 200, data: { list: Honor[], total: number, page: number, pageS
 ### 创建荣誉记录
 
 ```
-POST /api/admin/honors
+POST /rest/cbc/aiplatform/admin/honors
 权限: Editor（honors 模块）或 Admin
 Body: { recipientName: string, recipientAvatar?: string, honorTitle: string, honorLevel: string, description: string, coverUrl?: string, awardedAt: string, visible?: boolean }
 Response: { code: 201, data: Honor }
@@ -60,7 +60,7 @@ Response: { code: 201, data: Honor }
 ### 更新荣誉记录
 
 ```
-PUT /api/admin/honors/:id
+PUT /rest/cbc/aiplatform/admin/honors/:id
 权限: Editor（honors 模块）或 Admin
 Body: Partial<创建参数>
 Response: { code: 200, data: Honor }
@@ -69,7 +69,7 @@ Response: { code: 200, data: Honor }
 ### 删除荣誉记录
 
 ```
-DELETE /api/admin/honors/:id
+DELETE /rest/cbc/aiplatform/admin/honors/:id
 权限: Admin
 Response: { code: 200, data: null }
 ```

@@ -2,7 +2,7 @@
 // JWT 解析中间件：从 Authorization Header 解析 Bearer Token，写入 ctx.state.user
 import { Context } from 'egg';
 import * as jwt from 'jsonwebtoken';
-import { UserRole } from 'shared';
+import { UserRole } from '../shared';
 
 interface AppJwtPayload {
   sub: number;

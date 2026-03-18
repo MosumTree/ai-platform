@@ -69,7 +69,7 @@
 <script setup lang="ts">
 // Spec: specs/api/banners.spec.md
 import { ref, onMounted, onUnmounted } from 'vue'
-import type { Banner } from 'shared'
+import type { Banner } from '@/types'
 import { getBanners } from '@/api/banners'
 
 const INTERVAL_MS = 5000

@@ -56,7 +56,7 @@
 <script setup lang="ts">
 // Spec: specs/portal/home.spec.md
 import { ref, onMounted } from 'vue'
-import type { Lab } from 'shared'
+import type { Lab } from '@/types'
 import { getLabs } from '@/api/labs'
 
 const loading = ref(true)

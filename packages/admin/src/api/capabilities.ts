@@ -1,6 +1,6 @@
 // Spec: specs/api/capability-market.spec.md
 import http from './http'
-import type { CapabilityItem, PaginatedResult } from 'shared'
+import type { CapabilityItem, PaginatedResult } from '@/types'
 
 interface AdminCapabilityQuery {
   page?: number

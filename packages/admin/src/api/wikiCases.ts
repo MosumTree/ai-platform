@@ -1,6 +1,6 @@
 // Spec: specs/api/wiki-cases.spec.md
 import http from './http'
-import type { WikiCase, PaginatedResult } from 'shared'
+import type { WikiCase, PaginatedResult } from '@/types'
 
 interface WikiCaseQuery { page?: number; pageSize?: number }
 

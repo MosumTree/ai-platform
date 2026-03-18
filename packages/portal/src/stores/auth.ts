@@ -1,7 +1,7 @@
 // Spec: specs/api/auth.spec.md
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import type { User } from 'shared'
+import type { User } from '@/types'
 
 const SSO_LOGIN_URL = import.meta.env.VITE_SSO_LOGIN_URL as string ?? 'https://sso.example.com/oauth/authorize'
 const SSO_CLIENT_ID = import.meta.env.VITE_SSO_CLIENT_ID as string ?? 'ai-platform-portal'

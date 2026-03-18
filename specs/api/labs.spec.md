@@ -30,7 +30,7 @@
 ### 门户 - 获取已发布视频列表（公开）
 
 ```
-GET /api/labs
+GET /rest/cbc/aiplatform/labs
 权限: 公开（无需登录）
 Query: { page?: number, pageSize?: number }  // 首页默认 pageSize=3
 Response: {
@@ -48,7 +48,7 @@ Response: {
 ### 管理 - 获取全量列表（分页）
 
 ```
-GET /api/admin/labs
+GET /rest/cbc/aiplatform/admin/labs
 权限: Editor 及以上（暂时免鉴权）
 Query: { page?: number, pageSize?: number }
 Response: {
@@ -61,7 +61,7 @@ Response: {
 ### 管理 - 创建视频
 
 ```
-POST /api/admin/labs
+POST /rest/cbc/aiplatform/admin/labs
 权限: Editor 及以上（暂时免鉴权）
 Body: { title, subtitle, coverUrl, duration, videoUrl, order?, isPublished? }
 Response: { code: 201, message: "created", data: Lab }
@@ -71,7 +71,7 @@ Response: { code: 201, message: "created", data: Lab }
 ### 管理 - 更新视频
 
 ```
-PUT /api/admin/labs/:id
+PUT /rest/cbc/aiplatform/admin/labs/:id
 权限: Editor 及以上（暂时免鉴权）
 Body: 所有字段均为可选
 Response: { code: 200, message: "success", data: Lab }
@@ -81,7 +81,7 @@ Response: { code: 200, message: "success", data: Lab }
 ### 管理 - 删除视频
 
 ```
-DELETE /api/admin/labs/:id
+DELETE /rest/cbc/aiplatform/admin/labs/:id
 权限: Admin（暂时免鉴权）
 Response: { code: 200, message: "success", data: null }
 错误: 404
@@ -108,7 +108,7 @@ Response: { code: 200, message: "success", data: null }
 
 ## 验收标准
 
-- [ ] GET /api/labs 返回 isPublished=true 的列表
+- [ ] GET /rest/cbc/aiplatform/labs 返回 isPublished=true 的列表
 - [ ] 门户首页实战实验室楼层有骨架屏，从接口加载 3 条视频
 - [ ] 楼层无数据时不渲染
 - [ ] 视频卡片 hover 展示播放遮罩

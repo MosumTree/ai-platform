@@ -1,6 +1,6 @@
 // Spec: specs/api/cases.spec.md
 import http from './http'
-import type { Case, PaginatedResult } from 'shared'
+import type { Case, PaginatedResult } from '@/types'
 
 interface CaseQuery {
   page?: number

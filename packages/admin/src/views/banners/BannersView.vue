@@ -144,7 +144,7 @@ import { ref, reactive, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Plus } from '@element-plus/icons-vue'
 import type { FormInstance, FormRules } from 'element-plus'
-import type { Banner } from 'shared'
+import type { Banner } from '@/types'
 import { getAdminBanners, createBanner, updateBanner, deleteBanner } from '@/api/banners'
 
 const loading = ref(false)

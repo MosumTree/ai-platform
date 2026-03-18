@@ -31,7 +31,7 @@
 ### 门户 - 获取已启用工具列表（公开）
 
 ```
-GET /api/tool-guides
+GET /rest/cbc/aiplatform/tool-guides
 权限: 公开（无需登录）
 Response: {
   code: 200,
@@ -43,7 +43,7 @@ Response: {
 ### 管理 - 获取全量列表（分页）
 
 ```
-GET /api/admin/tool-guides
+GET /rest/cbc/aiplatform/admin/tool-guides
 权限: Editor 及以上（暂时免鉴权）
 Query: { page?: number, pageSize?: number }
 Response: {
@@ -61,7 +61,7 @@ Response: {
 ### 管理 - 创建工具
 
 ```
-POST /api/admin/tool-guides
+POST /rest/cbc/aiplatform/admin/tool-guides
 权限: Editor 及以上（暂时免鉴权）
 Body: {
   name: string,        // 必填
@@ -80,7 +80,7 @@ Response: { code: 201, message: "created", data: ToolGuide }
 ### 管理 - 更新工具
 
 ```
-PUT /api/admin/tool-guides/:id
+PUT /rest/cbc/aiplatform/admin/tool-guides/:id
 权限: Editor 及以上（暂时免鉴权）
 Body: CreateToolGuideDto 的所有字段均为可选
 Response: { code: 200, message: "success", data: ToolGuide }
@@ -90,7 +90,7 @@ Response: { code: 200, message: "success", data: ToolGuide }
 ### 管理 - 删除工具
 
 ```
-DELETE /api/admin/tool-guides/:id
+DELETE /rest/cbc/aiplatform/admin/tool-guides/:id
 权限: Admin（暂时免鉴权）
 Response: { code: 200, message: "success", data: null }
 错误: 404 工具不存在
@@ -117,7 +117,7 @@ Response: { code: 200, message: "success", data: null }
 
 ## 验收标准
 
-- [ ] GET /api/tool-guides 返回 isActive=true 的工具列表，按 order ASC 排序
+- [ ] GET /rest/cbc/aiplatform/tool-guides 返回 isActive=true 的工具列表，按 order ASC 排序
 - [ ] 门户首页工具指导楼层从接口加载数据，有骨架屏过渡
 - [ ] 楼层无数据时不显示
 - [ ] Admin 后台可新建、编辑、删除工具，操作后列表刷新

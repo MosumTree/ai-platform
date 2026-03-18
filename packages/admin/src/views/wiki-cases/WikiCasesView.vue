@@ -128,7 +128,7 @@ import { ref, reactive, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Plus } from '@element-plus/icons-vue'
 import type { FormInstance, FormRules } from 'element-plus'
-import type { WikiCase } from 'shared'
+import type { WikiCase } from '@/types'
 import { getAdminWikiCases, createWikiCase, updateWikiCase, deleteWikiCase } from '@/api/wikiCases'
 
 const loading = ref(false)

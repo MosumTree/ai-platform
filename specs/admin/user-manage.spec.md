@@ -11,7 +11,7 @@
 ### 获取用户列表
 
 ```
-GET /api/admin/users
+GET /rest/cbc/aiplatform/admin/users
 权限: Admin
 Query: { page?: number, pageSize?: number, keyword?: string, role?: string }
 Response: {
@@ -23,7 +23,7 @@ Response: {
 ### 更新用户角色与权限
 
 ```
-PATCH /api/admin/users/:id/role
+PATCH /rest/cbc/aiplatform/admin/users/:id/role
 权限: Admin
 Body: { role: UserRole, permissions?: string[] }
 Response: { code: 200, data: User }

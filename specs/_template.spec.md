@@ -28,7 +28,7 @@
 ### 获取列表
 
 ```
-GET /api/[resource]
+GET /rest/cbc/aiplatform/[resource]
 权限: Viewer 及以上
 Query: { page?: number, pageSize?: number }
 Response: {
@@ -45,7 +45,7 @@ Response: {
 ### 获取详情
 
 ```
-GET /api/[resource]/:id
+GET /rest/cbc/aiplatform/[resource]/:id
 权限: Viewer 及以上
 Response: {
   code: 200,
@@ -57,7 +57,7 @@ Response: {
 ### 创建
 
 ```
-POST /api/[resource]
+POST /rest/cbc/aiplatform/[resource]
 权限: Editor 及以上
 Body: { title: string, ... }
 Response: {
@@ -70,7 +70,7 @@ Response: {
 ### 更新
 
 ```
-PUT /api/[resource]/:id
+PUT /rest/cbc/aiplatform/[resource]/:id
 权限: Editor 及以上（只能更新自己负责模块的内容，Admin 无限制）
 Body: { title?: string, ... }
 Response: {
@@ -83,7 +83,7 @@ Response: {
 ### 删除
 
 ```
-DELETE /api/[resource]/:id
+DELETE /rest/cbc/aiplatform/[resource]/:id
 权限: Admin
 Response: { code: 200, data: null }
 错误: 401 | 403 | 404

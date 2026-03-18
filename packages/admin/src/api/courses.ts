@@ -1,6 +1,6 @@
 // Spec: specs/api/courses.spec.md
 import http from './http'
-import type { Course, CourseChapter, PaginatedResult } from 'shared'
+import type { Course, CourseChapter, PaginatedResult } from '@/types'
 
 interface AdminCourseQuery {
   page?: number

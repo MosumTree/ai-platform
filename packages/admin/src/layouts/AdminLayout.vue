@@ -146,7 +146,7 @@ import {
 } from '@element-plus/icons-vue'
 import { useAuthStore } from '@/stores/auth'
 import { logout } from '@/api/auth'
-import { UserRole } from 'shared'
+import { UserRole } from '@/types'
 
 const authStore = useAuthStore()
 const route = useRoute()

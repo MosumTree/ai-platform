@@ -1,6 +1,6 @@
 // Spec: specs/api/announcements.spec.md
 import http from './http'
-import type { Announcement, PaginatedResult } from 'shared'
+import type { Announcement, PaginatedResult } from '@/types'
 
 interface AdminAnnouncementQuery {
   page?: number

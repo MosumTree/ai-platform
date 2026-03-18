@@ -105,7 +105,7 @@ import { ref, reactive, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Plus } from '@element-plus/icons-vue'
 import type { FormInstance, FormRules } from 'element-plus'
-import type { Lab } from 'shared'
+import type { Lab } from '@/types'
 import { getAdminLabs, createLab, updateLab, deleteLab } from '@/api/labs'
 
 const loading = ref(false)

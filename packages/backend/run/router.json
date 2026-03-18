@@ -6,8 +6,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/banners",
-    "regexp": "/^\\/api\\/banners(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/banners",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/banners(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -20,8 +20,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/tool-guides",
-    "regexp": "/^\\/api\\/tool-guides(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/tool-guides",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/tool-guides(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -33,8 +33,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/labs",
-    "regexp": "/^\\/api\\/labs(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/labs",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/labs(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -46,8 +46,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/wiki-cases",
-    "regexp": "/^\\/api\\/wiki-cases(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/wiki-cases",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/wiki-cases(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -59,8 +59,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/auth/callback",
-    "regexp": "/^\\/api\\/auth\\/callback(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/auth/callback",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/auth\\/callback(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -71,8 +71,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/auth/refresh",
-    "regexp": "/^\\/api\\/auth\\/refresh(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/auth/refresh",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/auth\\/refresh(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -84,22 +84,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/announcements",
-    "regexp": "/^\\/api\\/announcements(?:\\/(?=$))?$/",
-    "stack": [
-      "jwtMiddleware",
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/api/courses",
-    "regexp": "/^\\/api\\/courses(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/announcements",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/announcements(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -112,8 +98,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/capabilities",
-    "regexp": "/^\\/api\\/capabilities(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/courses",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/courses(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -126,8 +112,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/cases",
-    "regexp": "/^\\/api\\/cases(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/capabilities",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/capabilities(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -140,8 +126,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/honors",
-    "regexp": "/^\\/api\\/honors(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/cases",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/cases(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -154,8 +140,22 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/auth/me",
-    "regexp": "/^\\/api\\/auth\\/me(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/honors",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/honors(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/auth/me",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/auth\\/me(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -167,8 +167,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/auth/logout",
-    "regexp": "/^\\/api\\/auth\\/logout(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/auth/logout",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/auth\\/logout(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -181,8 +181,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/admin/dashboard",
-    "regexp": "/^\\/api\\/admin\\/dashboard(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/dashboard",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/dashboard(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"
@@ -195,8 +195,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/admin/banners",
-    "regexp": "/^\\/api\\/admin\\/banners(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/banners",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/banners(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -207,8 +207,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/admin/banners",
-    "regexp": "/^\\/api\\/admin\\/banners(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/banners",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/banners(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -230,8 +230,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/banners/:id",
-    "regexp": "/^\\/api\\/admin\\/banners\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/banners/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/banners\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -253,8 +253,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/banners/:id",
-    "regexp": "/^\\/api\\/admin\\/banners\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/banners/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/banners\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -266,8 +266,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/admin/tool-guides",
-    "regexp": "/^\\/api\\/admin\\/tool-guides(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/tool-guides",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/tool-guides(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -278,8 +278,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/admin/tool-guides",
-    "regexp": "/^\\/api\\/admin\\/tool-guides(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/tool-guides",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/tool-guides(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -301,8 +301,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/tool-guides/:id",
-    "regexp": "/^\\/api\\/admin\\/tool-guides\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/tool-guides/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/tool-guides\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -324,8 +324,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/tool-guides/:id",
-    "regexp": "/^\\/api\\/admin\\/tool-guides\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/tool-guides/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/tool-guides\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -337,8 +337,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/admin/labs",
-    "regexp": "/^\\/api\\/admin\\/labs(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/labs",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/labs(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -349,8 +349,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/admin/labs",
-    "regexp": "/^\\/api\\/admin\\/labs(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/labs",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/labs(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -372,8 +372,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/labs/:id",
-    "regexp": "/^\\/api\\/admin\\/labs\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/labs/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/labs\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -395,8 +395,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/labs/:id",
-    "regexp": "/^\\/api\\/admin\\/labs\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/labs/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/labs\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -408,8 +408,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/admin/wiki-cases",
-    "regexp": "/^\\/api\\/admin\\/wiki-cases(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/wiki-cases",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/wiki-cases(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -420,8 +420,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/admin/wiki-cases",
-    "regexp": "/^\\/api\\/admin\\/wiki-cases(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/wiki-cases",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/wiki-cases(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -443,8 +443,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/wiki-cases/:id",
-    "regexp": "/^\\/api\\/admin\\/wiki-cases\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/wiki-cases/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/wiki-cases\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -466,8 +466,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/admin/wiki-cases/:id",
-    "regexp": "/^\\/api\\/admin\\/wiki-cases\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/rest/cbc/aiplatform/admin/wiki-cases/:id",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/wiki-cases\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

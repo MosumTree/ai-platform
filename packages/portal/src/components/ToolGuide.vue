@@ -66,7 +66,7 @@
 <script setup lang="ts">
 // Spec: specs/portal/home.spec.md
 import { ref, onMounted } from 'vue'
-import type { ToolGuide } from 'shared'
+import type { ToolGuide } from '@/types'
 import { getToolGuides } from '@/api/toolGuides'
 
 const loading = ref(true)

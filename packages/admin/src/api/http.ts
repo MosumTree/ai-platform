@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useAuthStore } from '@/stores/auth'
 
 const http = axios.create({
-  baseURL: '/api',
+  baseURL: '/rest/cbc/aiplatform',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
