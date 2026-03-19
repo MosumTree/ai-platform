@@ -19,6 +19,7 @@ import { WikiCaseEntity } from '../app/entity/WikiCase';
 import { AiTrendEntity } from '../app/entity/AiTrend';
 import { WeaponCategoryEntity } from '../app/entity/WeaponCategory';
 import { WeaponItemEntity } from '../app/entity/WeaponItem';
+import { PageVisitLogEntity } from '../app/entity/PageVisitLog';
 
 // 复用 config.default.ts 中的 dbConfig，避免配置重复
 export const AppDataSource = new DataSource({
@@ -38,6 +39,7 @@ export const AppDataSource = new DataSource({
     AiTrendEntity,
     WeaponCategoryEntity,
     WeaponItemEntity,
+    PageVisitLogEntity,
   ],
   charset: 'utf8mb4',
   timezone: '+08:00',

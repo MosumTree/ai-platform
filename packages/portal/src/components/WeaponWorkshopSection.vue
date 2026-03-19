@@ -15,7 +15,7 @@
       <!-- 分类标题栏 -->
       <div class="category-header">
         <div class="category-icon">
-          <span class="material-icon">{{ category.icon || 'construction' }}</span>
+          <span class="local-icon" aria-hidden="true">{{ resolveCategoryIcon(category.icon) }}</span>
         </div>
         <div class="category-info">
           <h3 class="category-name">{{ category.name }}</h3>
@@ -76,6 +76,21 @@ onMounted(async () => {
   }
 })
 
+function resolveCategoryIcon(icon?: string | null): string {
+  if (!icon) return '🛠'
+  const normalized = icon.trim().toLowerCase().replace(/[\s-]+/g, '_')
+  const iconMap: Record<string, string> = {
+    construction: '🛠',
+    build: '🛠',
+    engineering: '⚙️',
+    code: '💻',
+    terminal: '⌨️',
+    memory: '🧠',
+    extension: '🧩',
+  }
+  return iconMap[normalized] || '🧰'
+}
+
 function handleItemClick(item: WeaponItem) {
   // 预留：未来可跳转到武器详情页
   console.log('Weapon clicked:', item.name)
@@ -120,9 +135,9 @@ function handleEnterClick() {
   font-size: 1.25rem;
 }
 
-.material-icon {
-  font-family: 'Material Symbols Outlined', sans-serif;
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+.local-icon {
+  line-height: 1;
+  font-size: 1.25rem;
 }
 
 .category-info {

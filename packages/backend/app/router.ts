@@ -34,6 +34,10 @@ export default (app: Application) => {
   // 百工武器坊（门户，公开无需登录）
   router.get(`${API_PREFIX}/weapon-workshop`, controller.weaponWorkshop.index);
 
+  // 页面统计（门户访问上报）
+  router.post(`${API_PREFIX}/analytics/page-view`, controller.analytics.reportPageView);
+  router.get(`${API_PREFIX}/analytics/summary`, controller.analytics.summary);
+
   // SSO 认证
   router.get(`${API_PREFIX}/auth/callback`, controller.auth.callback);
   router.post(`${API_PREFIX}/auth/refresh`, controller.auth.refresh);
@@ -54,6 +58,7 @@ export default (app: Application) => {
 
   // Dashboard
   router.get(`${API_PREFIX}/admin/dashboard`, jwt, controller.adminDashboard.index);
+  router.get(`${API_PREFIX}/admin/analytics/overview`, jwt, controller.analytics.overview);
 
   // Banner 管理（CRUD，鉴权暂时关闭，SSO 对接后恢复）
   router.get(`${API_PREFIX}/admin/banners`, controller.adminBanners.index);

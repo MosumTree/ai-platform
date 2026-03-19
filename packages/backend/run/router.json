@@ -94,6 +94,31 @@
   {
     "name": null,
     "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/analytics/page-view",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/analytics\\/page-view(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/analytics/summary",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/analytics\\/summary(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "HEAD",
       "GET"
     ],
@@ -222,6 +247,20 @@
     "paramNames": [],
     "path": "/rest/cbc/aiplatform/admin/dashboard",
     "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/dashboard(?:\\/(?=$))?$/",
+    "stack": [
+      "jwtMiddleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/rest/cbc/aiplatform/admin/analytics/overview",
+    "regexp": "/^\\/rest\\/cbc\\/aiplatform\\/admin\\/analytics\\/overview(?:\\/(?=$))?$/",
     "stack": [
       "jwtMiddleware",
       "wrappedController"

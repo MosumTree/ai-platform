@@ -26,7 +26,7 @@
         <el-table-column label="图标" width="80" align="center">
           <template #default="{ row }">
             <div class="trend-icon">
-              <span class="material-icon">{{ row.icon || 'bolt' }}</span>
+              <span class="local-icon" aria-hidden="true">{{ resolveTrendIcon(row.icon) }}</span>
             </div>
           </template>
         </el-table-column>
@@ -175,6 +175,22 @@ function formatDate(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString('zh-CN')
 }
 
+function resolveTrendIcon(icon?: string | null): string {
+  if (!icon) return '⚡'
+  const normalized = icon.trim().toLowerCase().replace(/[\s-]+/g, '_')
+  const iconMap: Record<string, string> = {
+    bolt: '⚡',
+    lightning: '⚡',
+    brush: '🖌',
+    auto_awesome: '✨',
+    insights: '📈',
+    science: '🧪',
+    smart_toy: '🤖',
+    code: '💻',
+  }
+  return iconMap[normalized] || '📡'
+}
+
 async function fetchList() {
   loading.value = true
   try {
@@ -287,8 +303,8 @@ onMounted(fetchList)
   font-size: 1.25rem;
 }
 
-.material-icon {
-  font-family: 'Material Symbols Outlined', sans-serif;
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+.local-icon {
+  line-height: 1;
+  font-size: 1.25rem;
 }
 </style>

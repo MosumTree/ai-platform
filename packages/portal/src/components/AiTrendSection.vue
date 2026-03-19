@@ -34,7 +34,7 @@
         class="trend-card"
       >
         <div class="trend-icon">
-          <span class="material-icon">{{ trend.icon || 'bolt' }}</span>
+          <span class="local-icon" aria-hidden="true">{{ resolveTrendIcon(trend.icon) }}</span>
         </div>
         <div class="trend-content">
           <h3 class="trend-title">{{ trend.title }}</h3>
@@ -68,6 +68,22 @@ onMounted(async () => {
     loading.value = false
   }
 })
+
+function resolveTrendIcon(icon?: string | null): string {
+  if (!icon) return '⚡'
+  const normalized = icon.trim().toLowerCase().replace(/[\s-]+/g, '_')
+  const iconMap: Record<string, string> = {
+    bolt: '⚡',
+    lightning: '⚡',
+    brush: '🖌',
+    auto_awesome: '✨',
+    insights: '📈',
+    science: '🧪',
+    smart_toy: '🤖',
+    code: '💻',
+  }
+  return iconMap[normalized] || '📡'
+}
 
 function formatTime(dateStr: string): string {
   const date = new Date(dateStr)
@@ -187,9 +203,9 @@ function formatTime(dateStr: string): string {
   color: #fff;
 }
 
-.material-icon {
-  font-family: 'Material Symbols Outlined', sans-serif;
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+.local-icon {
+  line-height: 1;
+  font-size: 1.25rem;
 }
 
 .trend-content {

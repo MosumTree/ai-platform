@@ -47,7 +47,7 @@
             <div class="preview-info">
               <div class="preview-title">{{ item.title }}</div>
               <el-tag :type="item.isActive ? 'success' : 'info'" size="small">
-                {{ item.isActive ? '启用' : '禁用' }}}}
+                {{ item.isActive ? '启用' : '禁用' }}
               </el-tag>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <div class="module-header">
               <div class="module-title">
                 <el-icon><Box /></el-icon>
-                <span>白宫武器坊</span>
+                <span>百工武器坊</span>
                 <el-tag size="small">{{ counts.weaponCategories }} 分类</el-tag>
               </div>
               <el-button type="primary" link @click="navigateTo('/weapon-workshop')">查看</el-button>
@@ -132,7 +132,7 @@
             <div class="module-header">
               <div class="module-title">
                 <el-icon><Film /></el-icon>
-                <span>白宫武器坊</span>
+                <span>实战实验室</span>
                 <el-tag size="small">{{ counts.labs }} 个</el-tag>
               </div>
               <el-button type="primary" link @click="navigateTo('/labs')">查看</el-button>

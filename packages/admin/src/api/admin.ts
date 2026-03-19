@@ -18,6 +18,19 @@ interface RecentActivity {
   createdAt: string
 }
 
+export interface AnalyticsOverview {
+  range: { from: string; to: string }
+  totals: {
+    pageViews: number
+    visitors: number
+  }
+  byPath: Array<{
+    path: string
+    pageViews: number
+    visitors: number
+  }>
+}
+
 interface AdminUserQuery {
   page?: number
   pageSize?: number
@@ -31,6 +44,10 @@ export function getDashboardOverview(): Promise<DashboardOverview> {
 
 export function getDashboardRecent(): Promise<RecentActivity[]> {
   return http.get('/admin/dashboard/recent')
+}
+
+export function getAnalyticsOverview(params?: { from?: string; to?: string }): Promise<AnalyticsOverview> {
+  return http.get('/admin/analytics/overview', { params })
 }
 
 export function getAdminUsers(params?: AdminUserQuery): Promise<PaginatedResult<User>> {

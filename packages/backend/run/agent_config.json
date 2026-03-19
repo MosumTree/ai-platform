@@ -195,7 +195,8 @@
         "dev": "egg-bin dev --typescript",
         "build": "tsc -p tsconfig.json",
         "start": "egg-scripts start --daemon=false",
-        "lint": "eslint \"{app,config}/**/*.ts\""
+        "lint": "eslint \"{app,config}/**/*.ts\"",
+        "seed": "node scripts/seed-all.js"
       },
       "dependencies": {
         "egg": "^3.28.0",
@@ -525,7 +526,8 @@
         "dev": "egg-bin dev --typescript",
         "build": "tsc -p tsconfig.json",
         "start": "egg-scripts start --daemon=false",
-        "lint": "eslint \"{app,config}/**/*.ts\""
+        "lint": "eslint \"{app,config}/**/*.ts\"",
+        "seed": "node scripts/seed-all.js"
       },
       "dependencies": {
         "egg": "^3.28.0",

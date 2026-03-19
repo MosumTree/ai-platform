@@ -200,7 +200,8 @@
       "dev": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
       "build": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
       "start": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "lint": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "lint": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+      "seed": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
     },
     "dependencies": {
       "egg": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",

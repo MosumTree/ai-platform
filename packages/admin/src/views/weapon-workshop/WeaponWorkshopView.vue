@@ -17,7 +17,7 @@
         <el-table-column label="图标" width="80" align="center">
           <template #default="{ row }">
             <div class="category-icon">
-              <span class="material-icon">{{ row.icon || 'construction' }}</span>
+              <span class="local-icon" aria-hidden="true">{{ resolveCategoryIcon(row.icon) }}</span>
             </div>
           </template>
         </el-table-column>
@@ -371,6 +371,21 @@ async function handleItemDelete(row: WeaponItem) {
 }
 
 onMounted(fetchCategories)
+
+function resolveCategoryIcon(icon?: string | null): string {
+  if (!icon) return '🛠'
+  const normalized = icon.trim().toLowerCase().replace(/[\s-]+/g, '_')
+  const iconMap: Record<string, string> = {
+    construction: '🛠',
+    build: '🛠',
+    engineering: '⚙️',
+    code: '💻',
+    terminal: '⌨️',
+    memory: '🧠',
+    extension: '🧩',
+  }
+  return iconMap[normalized] || '🧰'
+}
 </script>
 
 <style scoped>
@@ -410,8 +425,8 @@ onMounted(fetchCategories)
   font-size: 1.25rem;
 }
 
-.material-icon {
-  font-family: 'Material Symbols Outlined', sans-serif;
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+.local-icon {
+  line-height: 1;
+  font-size: 1.25rem;
 }
 </style>

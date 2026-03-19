@@ -84,6 +84,16 @@
             <span class="footer-brand-name">AI 百工集合</span>
           </div>
           <p class="footer-slogan">专业的 AI 赋能平台，助力每一位创造者在 AI 时代实现技能进化。</p>
+          <div class="footer-stats">
+            <div class="footer-stat-item">
+              <span class="footer-stat-label">总访问量(PV)</span>
+              <span class="footer-stat-value">{{ analyticsSummary?.totals.pageViews ?? '--' }}</span>
+            </div>
+            <div class="footer-stat-item">
+              <span class="footer-stat-label">总访客数(UV)</span>
+              <span class="footer-stat-value">{{ analyticsSummary?.totals.visitors ?? '--' }}</span>
+            </div>
+          </div>
         </div>
 
         <!-- 链接组 -->
@@ -117,9 +127,20 @@
 
 <script setup lang="ts">
 // Spec: specs/portal/home.spec.md
+import { onMounted, ref } from 'vue'
 import { useAuthStore } from '@/stores/auth'
+import { getAnalyticsSummary, type AnalyticsSummary } from '@/api/analytics'
 
 const authStore = useAuthStore()
+const analyticsSummary = ref<AnalyticsSummary | null>(null)
+
+onMounted(async () => {
+  try {
+    analyticsSummary.value = await getAnalyticsSummary()
+  } catch {
+    // 失败静默，页脚显示占位
+  }
+})
 </script>
 
 <style scoped>
@@ -297,6 +318,30 @@ const authStore = useAuthStore()
   max-width: 280px;
   line-height: 1.6;
   margin: 0;
+}
+
+.footer-stats {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-stat-label {
+  font-size: 0.78rem;
+  color: #5D6D7E;
+}
+
+.footer-stat-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2C3E50;
 }
 
 .footer-links {
