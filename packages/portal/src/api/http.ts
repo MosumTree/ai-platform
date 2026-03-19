@@ -2,8 +2,16 @@
 import axios from 'axios'
 import { useAuthStore } from '@/stores/auth'
 
-// 调试默认走本地代理；现网构建时设置 VITE_API_BASE_URL=https://w3.cloudbu.huawei.com（或带路径的完整前缀）
-const baseURL = import.meta.env.VITE_API_BASE_URL ?? '/rest/cbc/aiplatform'
+// 调试默认走本地代理；现网可配域名或完整前缀，最终都确保带 /rest/cbc/aiplatform（不走 /api）
+const API_PREFIX = '/rest/cbc/aiplatform'
+const rawBaseURL = (import.meta.env.VITE_API_BASE_URL || '').trim()
+const baseURL = (() => {
+  if (!rawBaseURL) return API_PREFIX
+  if (!/^https?:\/\//i.test(rawBaseURL)) return rawBaseURL
+  const normalized = rawBaseURL.replace(/\/+$/, '')
+  return normalized.includes(API_PREFIX) ? normalized : `${normalized}${API_PREFIX}`
+})()
+
 const http = axios.create({
   baseURL,
   timeout: 10000,
