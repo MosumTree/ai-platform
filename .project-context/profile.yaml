@@ -1,0 +1,143 @@
+version: 1
+generated_at: 2026-03-19T07:40:18Z
+source_commit: 888a7519fb78f7318572f2c4cab808eabebe1bfe
+generator: sync-context
+
+repo:
+  name: ai-platform
+  type: monorepo
+  summary: 面向企业内部 AI 学习与宣传的多包仓库，包含员工门户、管理后台、Egg.js API 服务和 Spec 文档。
+
+context:
+  domains:
+    - enterprise-ai-learning
+    - content-operations
+    - analytics-observability
+    - micro-frontend-integration
+  stacks:
+    - typescript
+    - vue3
+    - vite
+    - vitest
+    - pinia
+    - axios
+    - egg
+    - typeorm
+    - mysql
+
+modules:
+  - id: portal-web
+    path: packages/portal
+    kind: app
+    domain:
+      - enterprise-ai-learning
+      - analytics-observability
+      - micro-frontend-integration
+    stack:
+      - vue3
+      - vite
+      - vitest
+      - pinia
+      - tailwindcss
+      - axios
+    summary: 员工展示门户，聚合内容楼层，使用统一 AppIcon + 自托管 Material Symbols 渲染首页图标，并在路由切换时上报页面访问统计、在页脚展示累计 PV/UV。
+    entry_points:
+      - packages/portal/src/main.ts
+      - packages/portal/src/router/index.ts
+      - packages/portal/src/views/HomeView.vue
+      - packages/portal/src/layouts/AppLayout.vue
+    critical_flows:
+      - portal-home-aggregation
+      - visitor-analytics-reporting
+      - auth-sso-shell
+    confidence: high
+    signals:
+      - micro-frontend
+      - needs-sync
+
+  - id: admin-web
+    path: packages/admin
+    kind: app
+    domain:
+      - content-operations
+      - analytics-observability
+      - micro-frontend-integration
+    stack:
+      - vue3
+      - vite
+      - pinia
+      - element-plus
+      - axios
+    summary: 管理后台，提供访问统计 Dashboard、首页内容总览和各内容模块管理入口。
+    entry_points:
+      - packages/admin/src/main.ts
+      - packages/admin/src/router/index.ts
+      - packages/admin/src/layouts/AdminLayout.vue
+      - packages/admin/src/views/dashboard/DashboardView.vue
+    critical_flows:
+      - analytics-overview-dashboard
+      - module-permission-gating
+      - content-crud-console
+    confidence: high
+    signals:
+      - micro-frontend
+      - needs-sync
+
+  - id: backend-api
+    path: packages/backend
+    kind: service
+    domain:
+      - authentication
+      - content-operations
+      - analytics-observability
+    stack:
+      - egg
+      - typeorm
+      - mysql
+      - typescript
+    summary: 统一后端 API，提供门户公开数据、JWT 解析、内容 CRUD，以及页面访问统计的上报与聚合接口。
+    entry_points:
+      - packages/backend/app/router.ts
+      - packages/backend/config/config.default.ts
+      - packages/backend/database/dataSource.ts
+      - packages/backend/app.ts
+    critical_flows:
+      - response-envelope
+      - jwt-parse
+      - content-repository-crud
+      - analytics-pv-uv-aggregation
+    confidence: high
+    signals:
+      - api-contract-drift
+      - needs-sync
+
+  - id: product-specs
+    path: specs
+    kind: docs
+    domain:
+      - spec-driven-development
+      - analytics-observability
+    stack:
+      - markdown
+    summary: Spec 驱动开发的规格来源，覆盖 API、portal 和 admin 模块。
+    entry_points:
+      - specs/README.md
+      - specs/api/auth.spec.md
+      - specs/api/analytics.spec.md
+      - specs/portal/home.spec.md
+      - specs/admin/dashboard.spec.md
+    critical_flows:
+      - spec-first-development
+    confidence: high
+    signals:
+      - source-of-truth
+
+uncertainty:
+  - README.md 将后端标记为 NestJS 且提到 packages/shared，但实际代码为 Egg.js，类型定义主要分散在 packages/admin/src/types/index.ts 与 packages/portal/src/types/index.ts。
+  - portal 与 admin 的路由守卫目前被注释，SSO/JWT 主流程是否已由宿主微前端兜底仍不确定。
+  - analytics 统计链路已新增，但 /admin/analytics/overview 当前仅挂载 jwt 解析中间件，controller 内未见显式登录或角色校验。
+  - packages/admin/src/views/home-content/HomeContentView.vue 顶部引用了 specs/admin/home-content.spec.md，但仓库中未找到该 Spec。
+  - dashboard 当前主要展示 analytics 统计；而 specs/admin/dashboard.spec.md 中的内容总览、最近操作、/admin/dashboard* 相关契约仍未与前后端完全对齐。
+  - portal 中 `/trends`、`/courses`、`/cases`、`/capabilities` 等内容入口仍未在当前 router 中看到实际页面路由。
+  - portal 已新增基于 Vitest 的图标解析回归测试，但仓库仍未发现 CI 工作流，admin/backend 也未见自动化测试目录。
+  - ToolGuide 的 icon 契约仍是“emoji 或图标名”自由输入；admin/backend 尚未对单词型图标名做统一校验或归一化，仍存在 portal 渲染契约漂移风险。

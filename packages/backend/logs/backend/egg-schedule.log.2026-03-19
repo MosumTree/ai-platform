@@ -1,0 +1,42 @@
+2026-03-19 17:12:17,795 INFO 73921 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 40662207ms at 2026-03-20 04:30:00.002
+2026-03-19 17:12:17,796 INFO 73921 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 24462204ms at 2026-03-20 00:00:00.000
+2026-03-19 17:12:17,796 INFO 73921 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 24463204ms at 2026-03-20 00:00:01.000
+2026-03-19 17:12:17,670 INFO 73948 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:12:17,670 INFO 73948 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:12:17,670 INFO 73948 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:20:14,697 INFO 87262 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:20:14,697 INFO 87262 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:20:14,697 INFO 87262 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:21:47,183 INFO 89591 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:21:47,183 INFO 89591 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:21:47,183 INFO 89591 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:21:49,484 INFO 89714 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:21:49,484 INFO 89714 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:21:49,484 INFO 89714 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:41:22,121 INFO 19040 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 38917882ms at 2026-03-20 04:30:00.003
+2026-03-19 17:41:22,121 INFO 19040 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 22717879ms at 2026-03-20 00:00:00.000
+2026-03-19 17:41:22,122 INFO 19040 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 22718879ms at 2026-03-20 00:00:01.001
+2026-03-19 17:41:21,992 INFO 19055 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:41:21,992 INFO 19055 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:41:21,992 INFO 19055 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:44:08,132 INFO 24472 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 38751871ms at 2026-03-20 04:30:00.003
+2026-03-19 17:44:08,133 INFO 24472 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 22551868ms at 2026-03-20 00:00:00.001
+2026-03-19 17:44:08,133 INFO 24472 [Timer] /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 22552867ms at 2026-03-20 00:00:01.000
+2026-03-19 17:44:08,007 INFO 24503 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:44:08,007 INFO 24503 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:44:08,007 INFO 24503 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:46:28,721 INFO 26030 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:46:28,721 INFO 26030 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:46:28,721 INFO 26030 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:49:05,962 INFO 28677 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-03-19 17:49:05,962 INFO 28677 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-03-19 17:49:05,962 INFO 28677 [egg-schedule]: register schedule /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-03-19 17:49:07,124 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 38452878ms at 2026-03-20 04:30:00.002
+2026-03-19 17:49:07,124 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 22252876ms at 2026-03-20 00:00:00.000
+2026-03-19 17:49:07,124 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 22253876ms at 2026-03-20 00:00:01.000
+2026-03-20 00:02:43,845 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 86236243ms at 2026-03-21 00:00:00.088
+2026-03-20 00:02:43,893 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 86237142ms at 2026-03-21 00:00:01.035
+2026-03-20 00:02:43,852 INFO 28677 [Job#17739361634521352732445072911] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2026-03-20 00:02:43,888 INFO 28677 [Job#17739361638541352736436548911] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2026-03-20 00:02:43,973 INFO 28677 [Job#17739361634521352732445072911] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 105ms. 
+2026-03-20 00:02:43,981 INFO 28677 [Job#17739361638541352736436548911] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 92ms. 

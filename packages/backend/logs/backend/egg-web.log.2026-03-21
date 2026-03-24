@@ -1,0 +1,58 @@
+2026-03-21 00:12:52,428 INFO 28677 [egg-logrotator] app logger reload: got log-reload message
+2026-03-21 04:04:22,316 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 04:04:22,320 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 04:12:57,194 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 04:12:57,203 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 06:05:28,903 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 06:05:28,911 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 06:05:29,638 INFO 28677 [-/127.0.0.1/-/188ms SCHEDULE /__schedule?path=/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&disable=false&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/h7/_r3v_gj96x937b2_t006fw900000gn/T/egg-multipart-tmp/backend"
+2026-03-21 06:05:29,719 INFO 28677 [-/127.0.0.1/-/272ms SCHEDULE /__schedule?path=/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&disable=false&immediate=false] [egg-multipart:CleanTmpdir] end
+2026-03-21 07:06:36,062 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 07:06:36,067 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 07:51:47,867 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 07:51:47,874 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 08:07:42,865 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 08:07:42,876 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 08:30:33,906 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 08:30:33,958 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 09:08:45,029 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 09:08:45,029 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 10:09:47,030 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 10:09:47,030 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 11:10:48,944 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 11:10:48,949 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 12:11:50,919 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 12:11:50,919 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 12:25:59,857 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 12:25:59,858 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 13:12:53,923 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 13:12:53,923 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 14:13:56,992 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 14:13:56,993 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 15:14:58,723 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 15:14:58,724 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 16:16:01,690 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 16:16:01,690 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 17:17:04,588 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 17:17:04,588 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 18:18:06,578 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 18:18:06,584 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 19:19:08,475 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 19:19:08,475 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 19:42:44,382 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 19:42:44,382 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 20:20:15,610 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 20:20:15,611 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 20:39:06,952 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 20:39:06,959 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 21:21:23,010 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 21:21:23,011 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 22:22:29,923 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 22:22:30,071 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-21 23:23:37,089 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-21 23:23:37,091 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-22 00:24:43,905 WARN 28677 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2026-03-22 00:24:43,916 WARN 28677 [ClusterClient:Watcher] follower closed, and try to init it again
+2026-03-22 00:24:44,810 INFO 28677 [-/127.0.0.1/-/379ms SCHEDULE /__schedule?path=/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js&type=worker&cron=0%200%20*%20*%20*] [egg-logrotator] clean all log before 31 days
+2026-03-22 00:24:44,822 INFO 28677 [-/127.0.0.1/-/339ms SCHEDULE /__schedule?path=/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js&type=worker&cron=1%200%200%20*%20*%20*] [egg-logrotator] broadcast log-reload
+2026-03-22 00:24:44,824 INFO 28677 [-/127.0.0.1/-/340ms SCHEDULE /__schedule?path=/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js&type=worker&cron=1%200%200%20*%20*%20*] [egg-logrotator] rotate files success by DayRotator, files ["/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/common-error.log -> /Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/common-error.log.2026-03-21","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/backend-web.log -> /Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/backend-web.log.2026-03-21","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/egg-web.log -> /Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/egg-web.log.2026-03-21","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/egg-schedule.log -> /Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/egg-schedule.log.2026-03-21","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/egg-agent.log -> /Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend/egg-agent.log.2026-03-21"]

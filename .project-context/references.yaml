@@ -1,0 +1,241 @@
+version: 1
+generated_at: 2026-03-19T07:40:18Z
+source_commit: 888a7519fb78f7318572f2c4cab808eabebe1bfe
+generator: sync-context
+
+reference_patterns:
+  - id: frontend-auth-http-client
+    kind: api_pattern
+    summary: portal/admin 共用的 axios 客户端统一处理 Bearer 注入、响应解包和 401 刷新重试。
+    refs:
+      - packages/admin/src/api/http.ts
+      - packages/portal/src/api/http.ts
+      - packages/admin/src/api/auth.ts
+    use_when:
+      - 需要新增依赖统一网关前缀和 JWT 的前端 API 模块
+    avoid_when:
+      - 请求完全不依赖统一 baseURL 或不应携带登录态
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: wujie-auth-bridge
+    kind: state_pattern
+    summary: 子应用通过 window.$wujie.bus 接收宿主登录信息，并在 auth store 中规范化展示用户字段。
+    refs:
+      - packages/admin/src/main.ts
+      - packages/portal/src/main.ts
+      - packages/admin/src/stores/auth.ts
+    use_when:
+      - 微前端子应用需要消费宿主注入的 SSO 用户信息
+    avoid_when:
+      - 独立部署且完全依赖后端 /auth/me 初始化用户态
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: portal-floor-self-fetch
+    kind: interaction_pattern
+    summary: 门户楼层组件各自 onMounted 拉数、维护 loading 和本地状态，失败静默不阻塞其他楼层。
+    refs:
+      - packages/portal/src/components/BannerCarousel.vue
+      - packages/portal/src/components/AiTrendSection.vue
+      - packages/portal/src/components/LabSection.vue
+    use_when:
+      - 首页聚合楼层或相互独立的小型内容区块
+    avoid_when:
+      - 多区块必须共享查询、缓存或统一错误处理
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: portal-route-analytics
+    kind: interaction_pattern
+    summary: 门户通过 router.afterEach 异步上报 path + visitorId，并在 layout 中拉取累计 PV/UV 统计，失败静默不影响交互。
+    refs:
+      - packages/portal/src/router/index.ts
+      - packages/portal/src/api/analytics.ts
+      - packages/portal/src/layouts/AppLayout.vue
+    use_when:
+      - 需要给 SPA 页面切换补访问统计且不阻塞首屏与路由跳转
+    avoid_when:
+      - 需要服务端埋点、登录态强绑定统计或精细事件级埋点
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: portal-app-icon-rendering
+    kind: ui_pattern
+    summary: portal 通过 AppIcon + portalIcon 在首页楼层统一渲染 Material Symbols，并自托管 woff2 字体；AI 风向标/武器坊走 strict material 模式，ToolGuide 走 auto 模式兼容 emoji 和普通文本。
+    refs:
+      - packages/portal/src/components/AppIcon.vue
+      - packages/portal/src/utils/portalIcon.ts
+      - packages/portal/src/assets/main.css
+      - packages/portal/src/assets/fonts/material-symbols-rounded-latin-400-normal.woff2
+      - packages/portal/src/components/ToolGuide.vue
+      - packages/portal/src/components/AiTrendSection.vue
+      - packages/portal/src/components/WeaponWorkshopSection.vue
+    use_when:
+      - 需要在 portal 中消费后端或 admin 提供的 Material Symbol 名称，并保留 emoji 或字面文本回退
+    avoid_when:
+      - 管理后台继续沿用 Element Plus 图标体系
+      - 需要完整 SVG 图标集或浏览器级图标渲染断言，而不是轻量 ligature font
+    tests:
+      - packages/portal/tests/portalIcon.spec.ts
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: backend-response-envelope
+    kind: api_pattern
+    summary: 成功响应由 response 中间件统一包装为 { code, message, data }，控制器主要返回裸业务数据。
+    refs:
+      - packages/backend/app/middleware/response.ts
+      - packages/backend/app/controller/auth.ts
+      - packages/backend/app/controller/adminDashboard.ts
+    use_when:
+      - 新增 Egg controller 或补齐统一返回格式
+    avoid_when:
+      - 已经手动构造完整成功包装对象且还会经过 response 中间件
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: backend-typeorm-content-crud
+    kind: api_pattern
+    summary: 内容模块 service 统一用 TypeORM Repository 实现公开查询、后台分页与 CRUD，并在服务层抛出 404 异常。
+    refs:
+      - packages/backend/app/service/banners.ts
+      - packages/backend/app/service/toolGuides.ts
+      - packages/backend/app/service/labs.ts
+    use_when:
+      - 新增 Banner、工具指导、实验室这类单实体内容模块
+    avoid_when:
+      - 需要跨多实体聚合、复杂权限过滤或统计汇总
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: backend-analytics-aggregation
+    kind: api_pattern
+    summary: analytics service 使用 TypeORM QueryBuilder 聚合 PV/UV，并在 boot hook 中兜底创建 page_visit_logs 表。
+    refs:
+      - packages/backend/app/service/analytics.ts
+      - packages/backend/app/controller/analytics.ts
+      - packages/backend/app.ts
+    use_when:
+      - 需要按时间范围聚合访问统计或新增轻量级数据看板接口
+    avoid_when:
+      - 需要正式迁移体系、复杂事件模型或高吞吐统计基础设施
+    tests: []
+    confidence: high
+    last_verified_at: 2026-03-19
+
+  - id: admin-permission-surface
+    kind: ui_pattern
+    summary: 管理后台通过 route meta、v-permission 和 auth store.hasModulePermission() 描述菜单与按钮权限。
+    refs:
+      - packages/admin/src/router/index.ts
+      - packages/admin/src/directives/permission.ts
+      - packages/admin/src/stores/auth.ts
+    use_when:
+      - 新增后台菜单、页面或按钮的角色/模块权限控制
+    avoid_when:
+      - 把前端显隐当作唯一安全边界
+    tests: []
+    confidence: medium
+    last_verified_at: 2026-03-19
+
+anti_examples:
+  - id: placeholder-admin-pages
+    reason: 多个后台页面仍是 el-empty 加 TODO 占位，只能用来识别待实现范围，不宜作为真实实现范式。
+    refs:
+      - packages/admin/src/views/users/UsersView.vue
+      - packages/admin/src/views/announcements/AnnouncementsView.vue
+      - packages/admin/src/views/courses/CoursesView.vue
+    confidence: high
+
+  - id: stale-readme-stack-summary
+    reason: README 中的后端和共享包描述与代码现状不一致，不应据此判断实际技术栈或目录边界。
+    refs:
+      - README.md
+    confidence: high
+
+risk_hotspots:
+  - id: auth-flow-scaffold-only
+    summary: 前端已有 token refresh/store 结构，但路由守卫注释、后端 auth service 仍为 TODO，真实认证闭环未完成。
+    refs:
+      - packages/portal/src/router/index.ts
+      - packages/admin/src/router/index.ts
+      - packages/backend/app/service/auth.ts
+    confidence: high
+
+  - id: dashboard-contract-drift
+    summary: Dashboard 当前页面已切到 analytics 统计，但 specs/admin/dashboard.spec.md 中的内容总览、最近操作和 /admin/dashboard* 契约仍与前后端实现分裂。
+    refs:
+      - specs/admin/dashboard.spec.md
+      - packages/admin/src/views/dashboard/DashboardView.vue
+      - packages/admin/src/api/admin.ts
+      - packages/backend/app/controller/adminDashboard.ts
+    confidence: high
+
+  - id: analytics-overview-auth-gap
+    summary: /admin/analytics/overview 规范要求 Editor 及以上，但当前实现只有 jwt 解析，没有看到显式登录或角色校验。
+    refs:
+      - specs/api/analytics.spec.md
+      - packages/backend/app/router.ts
+      - packages/backend/app/controller/analytics.ts
+      - packages/backend/app/middleware/jwt.ts
+    confidence: high
+
+  - id: missing-user-management-backend
+    summary: 管理后台已有用户管理 Spec、路由和 API 封装，但后端未发现 /admin/users 对应路由或 controller。
+    refs:
+      - specs/admin/user-manage.spec.md
+      - packages/admin/src/api/admin.ts
+      - packages/backend/app/router.ts
+    confidence: high
+
+  - id: portal-link-target-gaps
+    summary: 门户楼层与 layout 已出现 /capabilities、/courses、/cases、/trends 等入口，但当前 portal router 仍只注册首页、回调页和 404。
+    refs:
+      - packages/portal/src/router/index.ts
+      - packages/portal/src/components/AiTrendSection.vue
+      - packages/portal/src/layouts/AppLayout.vue
+    confidence: high
+
+  - id: duplicated-types-without-shared-package
+    summary: README 和 Specs 指向 shared 类型复用，但当前 admin 与 portal 各自维护一份大体相同的 src/types/index.ts，存在漂移风险。
+    refs:
+      - README.md
+      - packages/admin/src/types/index.ts
+      - packages/portal/src/types/index.ts
+    confidence: high
+
+  - id: tool-guide-icon-contract-drift
+    summary: ToolGuide Spec 仍允许 emoji 或图标名自由输入；portal 已新增 AppIcon auto 模式避免误判普通文本，但 admin/backend 仍未对单词型图标名做统一校验或归一化，存在契约漂移风险。
+    refs:
+      - specs/api/tool-guides.spec.md
+      - packages/portal/src/utils/portalIcon.ts
+      - packages/admin/src/views/tool-guides/ToolGuidesView.vue
+      - packages/backend/app/service/toolGuides.ts
+    confidence: medium
+
+  - id: missing-home-content-spec
+    summary: 首页内容总览页面已存在实现原型，但其引用的 specs/admin/home-content.spec.md 未在仓库中找到。
+    refs:
+      - packages/admin/src/views/home-content/HomeContentView.vue
+      - specs/README.md
+    confidence: high
+
+test_patterns:
+  - id: portal-icon-resolution-vitest
+    summary: portal 使用 Vitest 覆盖图标解析纯函数，验证 auto/material 两种模式、旧别名、emoji、普通文本和 fallback。
+    refs:
+      - packages/portal/tests/portalIcon.spec.ts
+      - packages/portal/src/utils/portalIcon.ts
+    use_when:
+      - 需要给 portal 的确定性展示映射增加低成本回归测试
+    avoid_when:
+      - 需要验证真实 DOM 渲染、字体加载或浏览器可见性
+    confidence: high
+    last_verified_at: 2026-03-19

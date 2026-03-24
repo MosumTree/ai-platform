@@ -34,7 +34,7 @@
         class="trend-card"
       >
         <div class="trend-icon">
-          <span class="local-icon" aria-hidden="true">{{ resolveTrendIcon(trend.icon) }}</span>
+          <AppIcon class="local-icon" :name="trend.icon" fallback="bolt" mode="material" />
         </div>
         <div class="trend-content">
           <h3 class="trend-title">{{ trend.title }}</h3>
@@ -52,6 +52,7 @@
 <script setup lang="ts">
 // Spec: specs/api/ai-trends.spec.md
 import { ref, onMounted } from 'vue'
+import AppIcon from '@/components/AppIcon.vue'
 import type { AiTrend } from '@/types'
 import { getAiTrends } from '@/api/aiTrends'
 
@@ -68,22 +69,6 @@ onMounted(async () => {
     loading.value = false
   }
 })
-
-function resolveTrendIcon(icon?: string | null): string {
-  if (!icon) return '⚡'
-  const normalized = icon.trim().toLowerCase().replace(/[\s-]+/g, '_')
-  const iconMap: Record<string, string> = {
-    bolt: '⚡',
-    lightning: '⚡',
-    brush: '🖌',
-    auto_awesome: '✨',
-    insights: '📈',
-    science: '🧪',
-    smart_toy: '🤖',
-    code: '💻',
-  }
-  return iconMap[normalized] || '📡'
-}
 
 function formatTime(dateStr: string): string {
   const date = new Date(dateStr)
