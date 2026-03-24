@@ -2,14 +2,14 @@
 import axios from 'axios'
 import { useAuthStore } from '@/stores/auth'
 
-// 调试默认走本地代理；现网可配域名或完整前缀，最终都确保带 /rest/cbc/aiplatform
+// 统一前缀：/rest/cbc/aiplatform
+// 本地不配置时走相对路径；现网仅配置域名（不带路径）即可
 const API_PREFIX = '/rest/cbc/aiplatform'
-const rawBaseURL = (import.meta.env.VITE_API_BASE_URL || '').trim()
+const rawApiOrigin = (import.meta.env.VITE_API_ORIGIN || '').trim()
 const baseURL = (() => {
-  if (!rawBaseURL) return API_PREFIX
-  if (!/^https?:\/\//i.test(rawBaseURL)) return rawBaseURL
-  const normalized = rawBaseURL.replace(/\/+$/, '')
-  return normalized.includes(API_PREFIX) ? normalized : `${normalized}${API_PREFIX}`
+  if (!rawApiOrigin) return API_PREFIX
+  const normalized = rawApiOrigin.replace(/\/+$/, '')
+  return `${normalized}${API_PREFIX}`
 })()
 
 const http = axios.create({

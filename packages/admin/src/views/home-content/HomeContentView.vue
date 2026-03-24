@@ -234,52 +234,62 @@ const loading = reactive({
 
 async function loadAllData() {
   loading.banners = true
-  try {
-    const res = await getAdminBanners({ page: 1, pageSize: 3 })
-    counts.banners = res.total || 0
-    previewData.banners = res.list || []
-    moduleStats[0].count = counts.banners
-  } finally { loading.banners = false }
-
   loading.toolGuides = true
-  try {
-    const res = await getAdminToolGuides({ page: 1, pageSize: 3 })
-    counts.toolGuides = res.total || 0
-    previewData.toolGuides = res.list || []
-    moduleStats[1].count = counts.toolGuides
-  } finally { loading.toolGuides = false }
-
   loading.aiTrends = true
-  try {
-    const res = await getAdminAiTrends(1, 3)
-    counts.aiTrends = res.total || 0
-    previewData.aiTrends = res.list || []
-    moduleStats[2].count = counts.aiTrends
-  } finally { loading.aiTrends = false }
-
   loading.weaponWorkshop = true
-  try {
-    const res = await getWeaponCategories(1, 3)
-    counts.weaponCategories = res.total || 0
-    previewData.weaponCategories = res.list || []
-    moduleStats[3].count = counts.weaponCategories
-  } finally { loading.weaponWorkshop = false }
-
   loading.labs = true
-  try {
-    const res = await getAdminLabs({ page: 1, pageSize: 3 })
-    counts.labs = res.total || 0
-    previewData.labs = res.list || []
-    moduleStats[4].count = counts.labs
-  } finally { loading.labs = false }
-
   loading.wikiCases = true
-  try {
-    const res = await getAdminWikiCases({ page: 1, pageSize: 3 })
-    counts.wikiCases = res.total || 0
-    previewData.wikiCases = res.list || []
-    moduleStats[5].count = counts.wikiCases
-  } finally { loading.wikiCases = false }
+
+  await Promise.allSettled([
+    (async () => {
+      try {
+        const res = await getAdminBanners({ page: 1, pageSize: 3 })
+        counts.banners = res.total || 0
+        previewData.banners = res.list || []
+        moduleStats[0].count = counts.banners
+      } finally { loading.banners = false }
+    })(),
+    (async () => {
+      try {
+        const res = await getAdminToolGuides({ page: 1, pageSize: 3 })
+        counts.toolGuides = res.total || 0
+        previewData.toolGuides = res.list || []
+        moduleStats[1].count = counts.toolGuides
+      } finally { loading.toolGuides = false }
+    })(),
+    (async () => {
+      try {
+        const res = await getAdminAiTrends(1, 3)
+        counts.aiTrends = res.total || 0
+        previewData.aiTrends = res.list || []
+        moduleStats[2].count = counts.aiTrends
+      } finally { loading.aiTrends = false }
+    })(),
+    (async () => {
+      try {
+        const res = await getWeaponCategories(1, 3)
+        counts.weaponCategories = res.total || 0
+        previewData.weaponCategories = res.list || []
+        moduleStats[3].count = counts.weaponCategories
+      } finally { loading.weaponWorkshop = false }
+    })(),
+    (async () => {
+      try {
+        const res = await getAdminLabs({ page: 1, pageSize: 3 })
+        counts.labs = res.total || 0
+        previewData.labs = res.list || []
+        moduleStats[4].count = counts.labs
+      } finally { loading.labs = false }
+    })(),
+    (async () => {
+      try {
+        const res = await getAdminWikiCases({ page: 1, pageSize: 3 })
+        counts.wikiCases = res.total || 0
+        previewData.wikiCases = res.list || []
+        moduleStats[5].count = counts.wikiCases
+      } finally { loading.wikiCases = false }
+    })(),
+  ])
 }
 
 function navigateTo(route: string) {
