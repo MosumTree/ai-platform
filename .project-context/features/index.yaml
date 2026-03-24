@@ -1,0 +1,202 @@
+version: 1
+generated_at: 2026-03-19T07:40:18Z
+source_commit: 888a7519fb78f7318572f2c4cab808eabebe1bfe
+generator: sync-context
+
+features:
+  - id: auth-sso-permissions
+    title: 统一认证、SSO 回调与权限外壳
+    status: active
+    spec_refs:
+      - specs/api/auth.spec.md
+    acceptance_refs: []
+    module_refs:
+      - portal-web
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/portal/src/stores/auth.ts
+      - packages/admin/src/stores/auth.ts
+      - packages/backend/app/service/auth.ts
+      - packages/admin/src/directives/permission.ts
+    test_refs: []
+    owners: []
+    confidence: medium
+    updated_at: 2026-03-19
+    uncertainty:
+      - 后端 auth service 仍是 TODO，占位接口尚未形成完整闭环。
+      - admin 与 portal 的路由守卫当前被注释。
+
+  - id: portal-home-aggregation
+    title: 门户首页聚合展示
+    status: active
+    spec_refs:
+      - specs/portal/home.spec.md
+    acceptance_refs: []
+    module_refs:
+      - portal-web
+      - backend-api
+    code_refs:
+      - packages/portal/src/views/HomeView.vue
+      - packages/portal/src/components/BannerCarousel.vue
+      - packages/portal/src/components/ToolGuide.vue
+      - packages/portal/src/components/AiTrendSection.vue
+      - packages/portal/src/components/WeaponWorkshopSection.vue
+      - packages/portal/src/components/LabSection.vue
+      - packages/portal/src/components/AppIcon.vue
+    test_refs:
+      - packages/portal/tests/portalIcon.spec.ts
+    owners: []
+    confidence: high
+    updated_at: 2026-03-19
+    uncertainty:
+      - 多个“查看更多”链接指向的列表页尚未在当前 portal router 中看到对应路由。
+      - BannerCarousel 在空或失败时回退为静态 Hero，与 spec 中“整体不渲染”描述不完全一致。
+
+  - id: page-visit-analytics
+    title: 门户访问统计与管理端 PV/UV 总览
+    status: active
+    spec_refs:
+      - specs/api/analytics.spec.md
+      - specs/portal/home.spec.md
+      - specs/admin/dashboard.spec.md
+    acceptance_refs: []
+    module_refs:
+      - portal-web
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/portal/src/router/index.ts
+      - packages/portal/src/api/analytics.ts
+      - packages/portal/src/layouts/AppLayout.vue
+      - packages/backend/app/service/analytics.ts
+      - packages/backend/app/entity/PageVisitLog.ts
+      - packages/admin/src/views/dashboard/DashboardView.vue
+    test_refs: []
+    owners: []
+    confidence: medium
+    updated_at: 2026-03-19
+    uncertainty:
+      - /admin/analytics/overview 当前实现未看到显式登录或角色校验，与 Spec 的 Editor 及以上权限要求不一致。
+      - Dashboard 页面当前主要展示 analytics 总览与排行，Spec 中的内容统计卡片与最近操作仍未完全落地。
+
+  - id: banners-and-tool-guides
+    title: Banner 与工具指导内容链路
+    status: active
+    spec_refs:
+      - specs/api/banners.spec.md
+      - specs/api/tool-guides.spec.md
+    acceptance_refs: []
+    module_refs:
+      - portal-web
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/backend/app/service/banners.ts
+      - packages/backend/app/service/toolGuides.ts
+      - packages/admin/src/api/banners.ts
+      - packages/admin/src/api/toolGuides.ts
+      - packages/portal/src/api/banners.ts
+      - packages/portal/src/api/toolGuides.ts
+      - packages/portal/src/components/ToolGuide.vue
+      - packages/portal/src/components/AppIcon.vue
+      - packages/portal/src/utils/portalIcon.ts
+    test_refs:
+      - packages/portal/tests/portalIcon.spec.ts
+    owners: []
+    confidence: high
+    updated_at: 2026-03-19
+    uncertainty:
+      - ToolGuide 的 Spec 仍允许 emoji 或图标名自由输入，admin/backend 尚未对单词型图标名做统一校验或归一化。
+
+  - id: ai-trends-and-weapon-workshop
+    title: AI 风向标与百工武器坊内容链路
+    status: active
+    spec_refs:
+      - specs/api/ai-trends.spec.md
+      - specs/api/weapon-workshop.spec.md
+    acceptance_refs: []
+    module_refs:
+      - portal-web
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/backend/app/service/aiTrends.ts
+      - packages/backend/app/service/weaponWorkshop.ts
+      - packages/portal/src/components/AiTrendSection.vue
+      - packages/portal/src/components/WeaponWorkshopSection.vue
+      - packages/portal/src/components/AppIcon.vue
+      - packages/portal/src/utils/portalIcon.ts
+      - packages/admin/src/api/aiTrends.ts
+      - packages/admin/src/api/weaponWorkshop.ts
+    test_refs:
+      - packages/portal/tests/portalIcon.spec.ts
+    owners: []
+    confidence: high
+    updated_at: 2026-03-19
+    uncertainty:
+      - portal 侧当前只消费有限条目的首页视图，完整列表或详情流未在 router 中显式出现。
+
+  - id: labs-and-wiki-cases
+    title: 实战实验室与案例百科通道
+    status: active
+    spec_refs:
+      - specs/api/labs.spec.md
+      - specs/api/wiki-cases.spec.md
+    acceptance_refs: []
+    module_refs:
+      - portal-web
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/backend/app/service/labs.ts
+      - packages/backend/app/service/wikiCases.ts
+      - packages/portal/src/components/LabSection.vue
+      - packages/admin/src/api/labs.ts
+      - packages/admin/src/api/wikiCases.ts
+    test_refs: []
+    owners: []
+    confidence: high
+    updated_at: 2026-03-19
+
+  - id: user-role-management
+    title: 用户角色与权限管理
+    status: unknown
+    spec_refs:
+      - specs/admin/user-manage.spec.md
+      - specs/api/auth.spec.md
+    acceptance_refs: []
+    module_refs:
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/admin/src/router/index.ts
+      - packages/admin/src/api/admin.ts
+      - packages/admin/src/views/users/UsersView.vue
+    test_refs: []
+    owners: []
+    confidence: low
+    updated_at: 2026-03-19
+    uncertainty:
+      - 后端未发现 /admin/users 相关路由、controller 或 service。
+      - 当前页面仍为占位空状态。
+
+  - id: admin-home-content-overview
+    title: 管理后台首页内容总览
+    status: active
+    spec_refs: []
+    acceptance_refs: []
+    module_refs:
+      - admin-web
+      - backend-api
+    code_refs:
+      - packages/admin/src/views/home-content/HomeContentView.vue
+      - packages/admin/src/api/banners.ts
+      - packages/admin/src/api/toolGuides.ts
+    test_refs: []
+    owners: []
+    confidence: low
+    updated_at: 2026-03-19
+    uncertainty:
+      - 代码显式引用 specs/admin/home-content.spec.md，但仓库中未找到该 Spec。
+      - 页面已接入多模块预览与跳转，但尚未发现对应验收或测试依据。

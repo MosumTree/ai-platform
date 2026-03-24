@@ -15,7 +15,12 @@
       <!-- 分类标题栏 -->
       <div class="category-header">
         <div class="category-icon">
-          <span class="local-icon" aria-hidden="true">{{ resolveCategoryIcon(category.icon) }}</span>
+          <AppIcon
+            class="local-icon"
+            :name="category.icon"
+            fallback="construction"
+            mode="material"
+          />
         </div>
         <div class="category-info">
           <h3 class="category-name">{{ category.name }}</h3>
@@ -47,6 +52,7 @@
 <script setup lang="ts">
 // Spec: specs/api/weapon-workshop.spec.md
 import { ref, computed, onMounted } from 'vue'
+import AppIcon from '@/components/AppIcon.vue'
 import type { WeaponCategory, WeaponItem } from '@/types'
 import { getWeaponWorkshop } from '@/api/weaponWorkshop'
 
@@ -75,21 +81,6 @@ onMounted(async () => {
     loading.value = false
   }
 })
-
-function resolveCategoryIcon(icon?: string | null): string {
-  if (!icon) return '🛠'
-  const normalized = icon.trim().toLowerCase().replace(/[\s-]+/g, '_')
-  const iconMap: Record<string, string> = {
-    construction: '🛠',
-    build: '🛠',
-    engineering: '⚙️',
-    code: '💻',
-    terminal: '⌨️',
-    memory: '🧠',
-    extension: '🧩',
-  }
-  return iconMap[normalized] || '🧰'
-}
 
 function handleItemClick(item: WeaponItem) {
   // 预留：未来可跳转到武器详情页
