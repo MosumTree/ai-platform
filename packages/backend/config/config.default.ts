@@ -19,6 +19,9 @@ export const dbConfig = {
 
 export default (): PowerPartial<EggAppConfig> => {
   return {
+    // 应用密钥（用于 cookie 签名等）
+    keys: process.env.COOKIE_KEYS || 'ai-platform-key-1, ai-platform-key-2',
+
     // 关闭 CSRF（API 服务）
     security: {
       csrf: {

@@ -1,0 +1,12 @@
+2026-03-22 04:52:15,854 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 85064351ms at 2026-03-23 04:30:00.155
+2026-03-22 04:52:15,756 INFO 28677 [Job#17741263356273254487374129043] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js executing by app
+2026-03-22 04:52:16,407 INFO 28677 [Job#17741263356273254487374129043] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js execute succeed, used 645ms. 
+2026-03-23 05:31:39,120 INFO 28677 [Job#17742150985194142128726882054] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2026-03-23 05:31:39,196 INFO 28677 [Job#17742150988894142131451855194] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2026-03-23 05:31:38,883 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 66501289ms at 2026-03-24 00:00:00.170
+2026-03-23 05:31:39,322 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 66502088ms at 2026-03-24 00:00:01.410
+2026-03-23 05:31:39,350 INFO 28570 [Timer] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 82700667ms at 2026-03-24 04:30:00.017
+2026-03-23 05:31:39,357 INFO 28677 [Job#17742150993244142135838849194] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js executing by app
+2026-03-23 05:31:39,433 INFO 28677 [Job#17742150985194142128726882054] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 275ms. 
+2026-03-23 05:31:39,452 INFO 28677 [Job#17742150993244142135838849194] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/schedule/clean_tmpdir.js execute succeed, used 94ms. 
+2026-03-23 05:31:39,454 INFO 28677 [Job#17742150988894142131451855194] /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 253ms. 

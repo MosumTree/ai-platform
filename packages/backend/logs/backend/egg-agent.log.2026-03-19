@@ -1,0 +1,403 @@
+2026-03-19 17:12:16,923 INFO 73921 [egg:logger] init all loggers with options: {"dir":"/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/logs/backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-03-19 17:12:16,933 INFO 73921 [egg:core] dump config after load, 4ms
+2026-03-19 17:12:16,979 INFO 73921 [egg-watcher] Start watching: ["/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks_proxy","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app.js"]
+2026-03-19 17:12:16,979 INFO 73921 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app"
+2026-03-19 17:12:16,980 INFO 73921 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config"
+2026-03-19 17:12:16,980 INFO 73921 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks"
+2026-03-19 17:12:16,980 INFO 73921 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks_proxy"
+2026-03-19 17:12:16,980 INFO 73921 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app.js"
+2026-03-19 17:12:16,980 INFO 73921 [egg-watcher:agent] watcher start success
+2026-03-19 17:12:17,002 INFO 73921 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [486ms] - #0 Process Start
+                                 ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [240ms] - #1 Application Start
+                                  ▇ [13ms] - #2 Load Plugin
+                                  ▇ [20ms] - #3 Load Config
+                                   ▇ [0ms] - #4 Require(0) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-session/config/config.default.js
+                                   ▇ [0ms] - #5 Require(1) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/config/config.default.js
+                                   ▇ [1ms] - #6 Require(2) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-jsonp/config/config.default.js
+                                   ▇ [0ms] - #7 Require(3) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-onerror/config/config.default.js
+                                   ▇ [0ms] - #8 Require(4) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-i18n/config/config.default.js
+                                   ▇ [0ms] - #9 Require(5) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/config/config.default.js
+                                   ▇ [0ms] - #10 Require(6) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/config/config.default.js
+                                   ▇ [0ms] - #11 Require(7) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/config/config.default.js
+                                   ▇ [1ms] - #12 Require(8) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/config/config.default.js
+                                   ▇ [1ms] - #13 Require(9) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/config/config.default.js
+                                   ▇ [0ms] - #14 Require(10) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-static/config/config.default.js
+                                   ▇ [0ms] - #15 Require(11) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/config/config.default.js
+                                   ▇ [1ms] - #16 Require(12) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/config/config.default.js
+                                   ▇ [1ms] - #17 Require(13) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/config/config.local.js
+                                    ▇ [0ms] - #18 Require(14) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/config/config.local.js
+                                    ▇ [1ms] - #19 Require(15) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/config/config.local.js
+                                    ▇ [2ms] - #20 Require(16) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/config/config.local.js
+                                    ▇▇▇ [50ms] - #21 Load extend/agent.js
+                                    ▇ [1ms] - #22 Require(17) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/agent.js
+                                    ▇▇ [43ms] - #23 Require(18) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/app/extend/agent.js
+                                       ▇ [1ms] - #24 Require(19) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/extend/agent.js
+                                       ▇▇ [32ms] - #25 Load extend/context.js
+                                       ▇ [11ms] - #26 Require(20) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js
+                                        ▇ [1ms] - #27 Require(21) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-jsonp/app/extend/context.js
+                                        ▇ [1ms] - #28 Require(22) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-i18n/app/extend/context.js
+                                        ▇ [14ms] - #29 Require(23) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/extend/context.js
+                                         ▇ [1ms] - #30 Require(24) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/app/extend/context.js
+                                         ▇ [1ms] - #31 Require(25) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js
+                                          ▇▇ [34ms] - #32 Load agent.js
+                                          ▇ [0ms] - #33 Require(26) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/agent.js
+                                          ▇ [0ms] - #34 Require(27) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-onerror/agent.js
+                                          ▇ [4ms] - #35 Require(28) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/agent.js
+                                          ▇ [1ms] - #36 Require(29) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/agent.js
+                                          ▇ [25ms] - #37 Require(30) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #38 Require(31) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/agent.js
+                                            ▇ [1ms] - #39 Require(32) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/agent.js
+                                            ▇▇▇ [53ms] - #40 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇ [31ms] - #41 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇ [69ms] - #42 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/agent.js:9:9
+2026-03-19 17:12:17,002 INFO 73921 [egg:core] dump config after ready, 4ms
+2026-03-19 17:20:12,164 WARN 73921 [agent:development] reload worker because /Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts change
+2026-03-19 17:20:11,762 INFO 73921 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts","stat":{"dev":16777222,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":19430217,"size":1693,"blocks":8,"atimeMs":1773912011715.23,"mtimeMs":1773912011650.85,"ctimeMs":1773912011650.85,"birthtimeMs":1773887158792.116},"remove":false,"isDirectory":false,"isFile":true}
+2026-03-19 17:20:11,964 INFO 73921 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts","stat":{"dev":16777222,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":19430217,"size":1693,"blocks":8,"atimeMs":1773912011715.23,"mtimeMs":1773912011650.85,"ctimeMs":1773912011650.85,"birthtimeMs":1773887158792.116},"remove":false,"isDirectory":false,"isFile":true}
+2026-03-19 17:21:44,189 WARN 73921 [agent:development] reload worker because /Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts change
+2026-03-19 17:21:43,984 INFO 73921 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts","stat":{"dev":16777222,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":19430217,"size":1820,"blocks":8,"atimeMs":1773912048243.8586,"mtimeMs":1773912103917.2595,"ctimeMs":1773912103917.2595,"birthtimeMs":1773887158792.116},"remove":false,"isDirectory":false,"isFile":true}
+2026-03-19 17:21:45,223 WARN 73921 [agent:development] reload worker because /Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts change
+2026-03-19 17:21:45,022 INFO 73921 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config/config.default.ts","stat":{"dev":16777222,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":19430217,"size":1820,"blocks":8,"atimeMs":1773912104006.0925,"mtimeMs":1773912103917.2595,"ctimeMs":1773912103917.2595,"birthtimeMs":1773887158792.116},"remove":false,"isDirectory":false,"isFile":true}
+2026-03-19 17:41:20,924 INFO 19040 [egg:logger] init all loggers with options: {"dir":"/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/logs/backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-03-19 17:41:20,932 INFO 19040 [egg:core] dump config after load, 4ms
+2026-03-19 17:41:20,976 INFO 19040 [egg-watcher] Start watching: ["/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks_proxy","/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app.js"]
+2026-03-19 17:41:20,976 INFO 19040 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app"
+2026-03-19 17:41:20,976 INFO 19040 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/config"
+2026-03-19 17:41:20,977 INFO 19040 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks"
+2026-03-19 17:41:20,977 INFO 19040 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/mocks_proxy"
+2026-03-19 17:41:20,977 INFO 19040 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/公司项目 2/ai-platform/packages/backend/app.js"
+2026-03-19 17:41:20,977 INFO 19040 [egg-watcher:agent] watcher start success
+2026-03-19 17:41:20,992 INFO 19040 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [688ms] - #0 Process Start
+                                    ▇▇▇▇▇▇▇▇▇▇▇▇ [243ms] - #1 Application Start
+                                     ▇ [15ms] - #2 Load Plugin
+                                      ▇ [22ms] - #3 Load Config
+                                      ▇ [0ms] - #4 Require(0) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-session/config/config.default.js
+                                      ▇ [0ms] - #5 Require(1) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/config/config.default.js
+                                      ▇ [1ms] - #6 Require(2) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-jsonp/config/config.default.js
+                                      ▇ [1ms] - #7 Require(3) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-onerror/config/config.default.js
+                                      ▇ [1ms] - #8 Require(4) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-i18n/config/config.default.js
+                                      ▇ [1ms] - #9 Require(5) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/config/config.default.js
+                                      ▇ [1ms] - #10 Require(6) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/config/config.default.js
+                                      ▇ [1ms] - #11 Require(7) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/config/config.default.js
+                                      ▇ [1ms] - #12 Require(8) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/config/config.default.js
+                                      ▇ [1ms] - #13 Require(9) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/config/config.default.js
+                                      ▇ [1ms] - #14 Require(10) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-static/config/config.default.js
+                                      ▇ [1ms] - #15 Require(11) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/config/config.default.js
+                                      ▇ [1ms] - #16 Require(12) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/config/config.default.js
+                                      ▇ [0ms] - #17 Require(13) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/config/config.local.js
+                                       ▇ [1ms] - #18 Require(14) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/config/config.local.js
+                                       ▇ [0ms] - #19 Require(15) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/config/config.local.js
+                                       ▇ [0ms] - #20 Require(16) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/config/config.local.js
+                                       ▇▇▇ [64ms] - #21 Load extend/agent.js
+                                       ▇ [2ms] - #22 Require(17) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/agent.js
+                                       ▇▇▇ [57ms] - #23 Require(18) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/app/extend/agent.js
+                                          ▇ [2ms] - #24 Require(19) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/extend/agent.js
+                                          ▇▇ [39ms] - #25 Load extend/context.js
+                                          ▇ [13ms] - #26 Require(20) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js
+                                           ▇ [3ms] - #27 Require(21) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [1ms] - #28 Require(22) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [17ms] - #29 Require(23) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [1ms] - #30 Require(24) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/app/extend/context.js
+                                            ▇ [1ms] - #31 Require(25) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js
+                                            ▇ [26ms] - #32 Load agent.js
+                                            ▇ [0ms] - #33 Require(26) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #34 Require(27) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-onerror/agent.js
+                                            ▇ [7ms] - #35 Require(28) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/agent.js
+                                             ▇ [2ms] - #36 Require(29) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/agent.js
+                                             ▇ [14ms] - #37 Require(30) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/agent.js
+                                              ▇ [1ms] - #38 Require(31) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/agent.js
+                                              ▇ [1ms] - #39 Require(32) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/agent.js
+                                              ▇▇ [50ms] - #40 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/lib/init.js:15:14
+                                              ▇ [35ms] - #41 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/agent.js:12:9
+                                              ▇▇▇ [58ms] - #42 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/agent.js:9:9
+2026-03-19 17:41:20,992 INFO 19040 [egg:core] dump config after ready, 5ms
+2026-03-19 17:44:07,331 INFO 24472 [egg:logger] init all loggers with options: {"dir":"/tmp/ai-platform-dev-link/packages/backend/logs/backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-03-19 17:44:07,337 INFO 24472 [egg:core] dump config after load, 3ms
+2026-03-19 17:44:07,376 INFO 24472 [egg-watcher] Start watching: ["/tmp/ai-platform-dev-link/packages/backend/app","/tmp/ai-platform-dev-link/packages/backend/config","/tmp/ai-platform-dev-link/packages/backend/mocks","/tmp/ai-platform-dev-link/packages/backend/mocks_proxy","/tmp/ai-platform-dev-link/packages/backend/app.js"]
+2026-03-19 17:44:07,377 INFO 24472 [egg-watcher] Start watching: "/tmp/ai-platform-dev-link/packages/backend/app"
+2026-03-19 17:44:07,377 INFO 24472 [egg-watcher] Start watching: "/tmp/ai-platform-dev-link/packages/backend/config"
+2026-03-19 17:44:07,377 INFO 24472 [egg-watcher] Start watching: "/tmp/ai-platform-dev-link/packages/backend/mocks"
+2026-03-19 17:44:07,377 INFO 24472 [egg-watcher] Start watching: "/tmp/ai-platform-dev-link/packages/backend/mocks_proxy"
+2026-03-19 17:44:07,377 INFO 24472 [egg-watcher] Start watching: "/tmp/ai-platform-dev-link/packages/backend/app.js"
+2026-03-19 17:44:07,377 INFO 24472 [egg-watcher:agent] watcher start success
+2026-03-19 17:44:07,384 INFO 24472 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [526ms] - #0 Process Start
+                                  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [236ms] - #1 Application Start
+                                   ▇ [16ms] - #2 Load Plugin
+                                    ▇ [22ms] - #3 Load Config
+                                    ▇ [0ms] - #4 Require(0) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-session/config/config.default.js
+                                    ▇ [1ms] - #5 Require(1) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/config/config.default.js
+                                    ▇ [1ms] - #6 Require(2) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-jsonp/config/config.default.js
+                                    ▇ [1ms] - #7 Require(3) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-onerror/config/config.default.js
+                                    ▇ [1ms] - #8 Require(4) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-i18n/config/config.default.js
+                                    ▇ [1ms] - #9 Require(5) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/config/config.default.js
+                                    ▇ [1ms] - #10 Require(6) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/config/config.default.js
+                                    ▇ [1ms] - #11 Require(7) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/config/config.default.js
+                                    ▇ [1ms] - #12 Require(8) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/config/config.default.js
+                                    ▇ [1ms] - #13 Require(9) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/config/config.default.js
+                                    ▇ [0ms] - #14 Require(10) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-static/config/config.default.js
+                                     ▇ [0ms] - #15 Require(11) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/config/config.default.js
+                                     ▇ [1ms] - #16 Require(12) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/config/config.default.js
+                                     ▇ [1ms] - #17 Require(13) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/config/config.local.js
+                                     ▇ [0ms] - #18 Require(14) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/config/config.local.js
+                                     ▇ [1ms] - #19 Require(15) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/config/config.local.js
+                                     ▇ [0ms] - #20 Require(16) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/config/config.local.js
+                                     ▇▇▇▇ [65ms] - #21 Load extend/agent.js
+                                     ▇ [1ms] - #22 Require(17) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/agent.js
+                                     ▇▇▇ [59ms] - #23 Require(18) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/app/extend/agent.js
+                                         ▇ [2ms] - #24 Require(19) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/app/extend/agent.js
+                                         ▇▇ [45ms] - #25 Load extend/context.js
+                                         ▇ [13ms] - #26 Require(20) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js
+                                          ▇ [3ms] - #27 Require(21) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #28 Require(22) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [22ms] - #29 Require(23) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [1ms] - #30 Require(24) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-view/app/extend/context.js
+                                            ▇ [1ms] - #31 Require(25) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js
+                                            ▇ [24ms] - #32 Load agent.js
+                                            ▇ [1ms] - #33 Require(26) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/agent.js
+                                            ▇ [1ms] - #34 Require(27) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-onerror/agent.js
+                                            ▇ [8ms] - #35 Require(28) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/agent.js
+                                             ▇ [1ms] - #36 Require(29) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/agent.js
+                                             ▇ [11ms] - #37 Require(30) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/agent.js
+                                              ▇ [1ms] - #38 Require(31) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-logrotator/agent.js
+                                              ▇ [0ms] - #39 Require(32) /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/agent.js
+                                              ▇▇ [44ms] - #40 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-watcher/lib/init.js:15:14
+                                              ▇ [30ms] - #41 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-schedule/agent.js:12:9
+                                              ▇▇▇ [47ms] - #42 Before Start in /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-development/agent.js:9:9
+2026-03-19 17:44:07,385 INFO 24472 [egg:core] dump config after ready, 2ms
+2026-03-19 17:46:24,746 INFO 25929 [egg:logger] init all loggers with options: {"dir":"/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-03-19 17:46:24,757 INFO 25929 [egg:core] dump config after load, 6ms
+2026-03-19 17:46:24,809 INFO 25929 [egg-watcher] Start watching: ["/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks_proxy","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app.js"]
+2026-03-19 17:46:24,809 INFO 25929 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app"
+2026-03-19 17:46:24,809 INFO 25929 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config"
+2026-03-19 17:46:24,809 INFO 25929 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks"
+2026-03-19 17:46:24,809 INFO 25929 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks_proxy"
+2026-03-19 17:46:24,810 INFO 25929 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app.js"
+2026-03-19 17:46:24,810 INFO 25929 [egg-watcher:agent] watcher start success
+2026-03-19 17:46:24,821 INFO 25929 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [1348ms] - #0 Process Start
+               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [3025ms] - #1 Application Start
+                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2652ms] - #2 Load Plugin
+                                              ▇ [94ms] - #3 Load Config
+                                              ▇ [65ms] - #4 Require(0) config/config.default.ts
+                                              ▇ [1ms] - #5 Require(1) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js
+                                              ▇ [1ms] - #6 Require(2) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js
+                                              ▇ [0ms] - #7 Require(3) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/config.default.js
+                                              ▇ [0ms] - #8 Require(4) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/config.default.js
+                                              ▇ [1ms] - #9 Require(5) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js
+                                              ▇ [1ms] - #10 Require(6) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.default.js
+                                              ▇ [0ms] - #11 Require(7) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/config.default.js
+                                              ▇ [1ms] - #12 Require(8) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js
+                                              ▇ [1ms] - #13 Require(9) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js
+                                               ▇ [1ms] - #14 Require(10) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js
+                                               ▇ [1ms] - #15 Require(11) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js
+                                               ▇ [1ms] - #16 Require(12) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js
+                                               ▇ [0ms] - #17 Require(13) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-cors/config/config.default.js
+                                               ▇ [1ms] - #18 Require(14) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js
+                                               ▇ [0ms] - #19 Require(15) config/config.default.ts
+                                               ▇ [1ms] - #20 Require(16) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.local.js
+                                               ▇ [0ms] - #21 Require(17) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.local.js
+                                               ▇ [0ms] - #22 Require(18) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.local.js
+                                               ▇ [1ms] - #23 Require(19) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.local.js
+                                               ▇ [77ms] - #24 Load extend/agent.js
+                                               ▇ [1ms] - #25 Require(20) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/agent.js
+                                               ▇ [68ms] - #26 Require(21) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/app/extend/agent.js
+                                                ▇ [1ms] - #27 Require(22) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/extend/agent.js
+                                                ▇ [58ms] - #28 Load extend/context.js
+                                                ▇ [17ms] - #29 Require(23) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/context.js
+                                                ▇ [4ms] - #30 Require(24) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/app/extend/context.js
+                                                ▇ [1ms] - #31 Require(25) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/app/extend/context.js
+                                                ▇ [25ms] - #32 Require(26) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/extend/context.js
+                                                ▇ [1ms] - #33 Require(27) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/app/extend/context.js
+                                                ▇ [2ms] - #34 Require(28) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/app/extend/context.js
+                                                ▇ [37ms] - #35 Load agent.js
+                                                ▇ [1ms] - #36 Require(29) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/agent.js
+                                                ▇ [1ms] - #37 Require(30) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/agent.js
+                                                ▇ [11ms] - #38 Require(31) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/agent.js
+                                                ▇ [2ms] - #39 Require(32) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/agent.js
+                                                ▇ [17ms] - #40 Require(33) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/agent.js
+                                                 ▇ [1ms] - #41 Require(34) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/agent.js
+                                                 ▇ [1ms] - #42 Require(35) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/agent.js
+                                                 ▇ [61ms] - #43 Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/lib/init.js:15:14
+                                                 ▇ [42ms] - #44 Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/agent.js:12:9
+                                                 ▇ [63ms] - #45 Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/agent.js:9:9
+2026-03-19 17:46:24,821 INFO 25929 [egg:core] dump config after ready, 6ms
+2026-03-19 17:49:02,416 INFO 28570 [egg:logger] init all loggers with options: {"dir":"/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-03-19 17:49:02,424 INFO 28570 [egg:core] dump config after load, 3ms
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher] Start watching: ["/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks_proxy","/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app.js"]
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app"
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config"
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks"
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/mocks_proxy"
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher] Start watching: "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app.js"
+2026-03-19 17:49:02,474 INFO 28570 [egg-watcher:agent] watcher start success
+2026-03-19 17:49:02,483 INFO 28570 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [1148ms] - #0 Process Start
+               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2665ms] - #1 Application Start
+               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2380ms] - #2 Load Plugin
+                                              ▇ [66ms] - #3 Load Config
+                                              ▇ [47ms] - #4 Require(0) config/config.default.ts
+                                               ▇ [1ms] - #5 Require(1) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js
+                                               ▇ [0ms] - #6 Require(2) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js
+                                               ▇ [0ms] - #7 Require(3) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/config.default.js
+                                               ▇ [0ms] - #8 Require(4) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/config.default.js
+                                               ▇ [0ms] - #9 Require(5) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js
+                                               ▇ [1ms] - #10 Require(6) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.default.js
+                                               ▇ [0ms] - #11 Require(7) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/config.default.js
+                                               ▇ [0ms] - #12 Require(8) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js
+                                               ▇ [0ms] - #13 Require(9) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js
+                                               ▇ [0ms] - #14 Require(10) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js
+                                               ▇ [0ms] - #15 Require(11) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js
+                                               ▇ [1ms] - #16 Require(12) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js
+                                               ▇ [1ms] - #17 Require(13) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-cors/config/config.default.js
+                                               ▇ [1ms] - #18 Require(14) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js
+                                               ▇ [0ms] - #19 Require(15) config/config.default.ts
+                                               ▇ [0ms] - #20 Require(16) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.local.js
+                                               ▇ [0ms] - #21 Require(17) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.local.js
+                                               ▇ [0ms] - #22 Require(18) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.local.js
+                                               ▇ [0ms] - #23 Require(19) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.local.js
+                                               ▇ [63ms] - #24 Load extend/agent.js
+                                               ▇ [1ms] - #25 Require(20) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/agent.js
+                                               ▇ [51ms] - #26 Require(21) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/app/extend/agent.js
+                                                ▇ [2ms] - #27 Require(22) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/extend/agent.js
+                                                ▇ [45ms] - #28 Load extend/context.js
+                                                ▇ [14ms] - #29 Require(23) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/context.js
+                                                ▇ [3ms] - #30 Require(24) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/app/extend/context.js
+                                                ▇ [1ms] - #31 Require(25) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/app/extend/context.js
+                                                ▇ [21ms] - #32 Require(26) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/extend/context.js
+                                                ▇ [1ms] - #33 Require(27) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/app/extend/context.js
+                                                ▇ [1ms] - #34 Require(28) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/app/extend/context.js
+                                                ▇ [30ms] - #35 Load agent.js
+                                                ▇ [0ms] - #36 Require(29) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/agent.js
+                                                ▇ [1ms] - #37 Require(30) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/agent.js
+                                                ▇ [8ms] - #38 Require(31) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/agent.js
+                                                ▇ [1ms] - #39 Require(32) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/agent.js
+                                                ▇ [14ms] - #40 Require(33) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/agent.js
+                                                 ▇ [0ms] - #41 Require(34) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/agent.js
+                                                 ▇ [1ms] - #42 Require(35) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/agent.js
+                                                 ▇ [55ms] - #43 Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/lib/init.js:15:14
+                                                 ▇ [37ms] - #44 Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/agent.js:12:9
+                                                 ▇ [59ms] - #45 Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/agent.js:9:9
+2026-03-19 17:49:02,484 INFO 28570 [egg:core] dump config after ready, 4ms
+2026-03-19 18:23:50,746 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 1503510ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 18:41:39,954 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 1049179ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 18:57:35,814 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 936532ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:13:47,709 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932002ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:20:35,242 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 367552ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:36:48,083 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932811ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:53:00,725 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932616ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:59:15,206 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 334448ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:15:26,303 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 931064ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:31:39,105 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932766ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:47:51,136 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932028ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:59:20,164 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 649016ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 22:00:27,944 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 3626747ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 23:01:35,031 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 3648708ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-20 00:02:43,898 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 3645406ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+

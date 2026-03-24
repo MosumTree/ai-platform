@@ -106,26 +106,26 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "E:\\Projects\\ai-platform\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "E:\\Projects\\ai-platform\\node_modules\\egg-session\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-jsonp\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-onerror\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-watcher\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-schedule\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-view\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg-cors\\config\\locales",
-        "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\locales",
-        "E:\\Projects\\ai-platform\\packages\\backend\\config\\locales"
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-cors/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/locales",
+        "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -136,8 +136,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "E:\\Projects\\ai-platform\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "E:\\Projects\\ai-platform\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -162,7 +162,7 @@
       "fileExtensions": [],
       "whitelist": null,
       "allowArrayField": false,
-      "tmpdir": "C:\\Users\\HW\\AppData\\Local\\Temp\\egg-multipart-tmp\\backend",
+      "tmpdir": "/var/folders/h7/_r3v_gj96x937b2_t006fw900000gn/T/egg-multipart-tmp/backend",
       "cleanSchedule": {
         "cron": "0 30 4 * * *",
         "disable": false
@@ -188,14 +188,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "E:\\Projects\\ai-platform\\packages\\backend\\app\\public",
+      "dir": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "E:\\Projects\\ai-platform\\packages\\backend\\app\\view",
+      "root": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -209,7 +209,7 @@
     },
     "env": "local",
     "name": "backend",
-    "keys": "<String len: 0>",
+    "keys": "<String len: 36>",
     "cookies": {},
     "proxy": false,
     "maxIpsCount": 0,
@@ -251,9 +251,9 @@
         "typescript": "^5.3.0"
       }
     },
-    "baseDir": "E:\\Projects\\ai-platform\\packages\\backend",
-    "HOME": "C:\\Users\\HW",
-    "rundir": "E:\\Projects\\ai-platform\\packages\\backend\\run",
+    "baseDir": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend",
+    "HOME": "/Users/mengxin",
+    "rundir": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/run",
     "dump": {
       "ignore": "<Set>",
       "timing": {
@@ -289,7 +289,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "E:\\Projects\\ai-platform\\packages\\backend\\logs\\backend",
+      "dir": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/logs/backend",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -370,13 +370,13 @@
       "host": "localhost",
       "port": 3306,
       "username": "root",
-      "password": "<String len: 15>",
+      "password": "<String len: 0>",
       "database": "ai_platform",
       "synchronize": true,
       "logging": true
     },
     "jwt": {
-      "secret": "<String len: 27>",
+      "secret": "<String len: 29>",
       "expiresIn": "8h"
     },
     "coreMiddlewares": "~config~coreMiddleware",
@@ -393,8 +393,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-onerror",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror",
       "version": "2.4.0"
     },
     "session": {
@@ -404,8 +404,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-session",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -415,8 +415,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -426,8 +426,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-watcher",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher",
       "version": "3.1.1",
       "dependents": [
         "development"
@@ -442,8 +442,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart",
       "version": "3.5.0"
     },
     "security": {
@@ -455,8 +455,8 @@
         "session"
       ],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-security",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security",
       "version": "3.7.0"
     },
     "development": {
@@ -470,8 +470,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-development",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development",
       "version": "3.0.2"
     },
     "logrotator": {
@@ -483,8 +483,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator",
       "version": "3.2.0"
     },
     "schedule": {
@@ -494,8 +494,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-schedule",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule",
       "version": "4.0.1",
       "dependents": [
         "logrotator"
@@ -508,8 +508,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-static",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static",
       "version": "2.3.1"
     },
     "jsonp": {
@@ -521,8 +521,8 @@
         "security"
       ],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-jsonp",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -532,8 +532,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-view",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/plugin.js",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view",
       "version": "2.1.4"
     },
     "cors": {
@@ -543,17 +543,17 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\Projects\\ai-platform\\packages\\backend\\config\\plugin.ts",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg-cors",
+      "from": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/plugin.ts",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-cors",
       "version": "2.2.4"
     }
   },
   "appInfo": {
     "name": "backend",
-    "baseDir": "E:\\Projects\\ai-platform\\packages\\backend",
+    "baseDir": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend",
     "env": "local",
     "scope": "",
-    "HOME": "C:\\Users\\HW",
+    "HOME": "/Users/mengxin",
     "pkg": {
       "name": "backend",
       "version": "0.0.1",
@@ -588,6 +588,6 @@
         "typescript": "^5.3.0"
       }
     },
-    "root": "E:\\Projects\\ai-platform\\packages\\backend"
+    "root": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend"
   }
 }

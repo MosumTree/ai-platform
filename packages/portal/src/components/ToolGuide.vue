@@ -30,7 +30,13 @@
       >
         <!-- 图标 -->
         <div class="tool-icon-wrap">
-          <span class="tool-icon" :style="{ color: tool.iconColor }">{{ tool.icon }}</span>
+          <AppIcon
+            class="tool-icon"
+            :name="tool.icon"
+            fallback="extension"
+            mode="auto"
+            :style="{ color: tool.iconColor }"
+          />
         </div>
 
         <!-- 名称 + 描述 -->
@@ -66,6 +72,7 @@
 <script setup lang="ts">
 // Spec: specs/portal/home.spec.md
 import { ref, onMounted } from 'vue'
+import AppIcon from '@/components/AppIcon.vue'
 import type { ToolGuide } from '@/types'
 import { getToolGuides } from '@/api/toolGuides'
 

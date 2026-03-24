@@ -1,0 +1,469 @@
+2026-03-19 17:12:28,965 ERROR 73948 [-/127.0.0.1/-/3ms GET /rest/cbc/aiplatform/heartbeat] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:29,879 ERROR 73948 [-/127.0.0.1/-/1ms GET /rest/cbc/aiplatform/tool-guides] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,494 ERROR 73948 [-/::1/-/5ms GET /rest/cbc/aiplatform/banners] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,499 ERROR 73948 [-/::1/-/0ms GET /rest/cbc/aiplatform/tool-guides] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,505 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/ai-trends?limit=5] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,507 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/weapon-workshop?categoryLimit=1&itemLimit=3] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,512 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/labs?page=1&pageSize=3] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,514 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/wiki-cases?page=1&pageSize=3] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:12:46,622 ERROR 73948 [-/::1/-/0ms GET /rest/cbc/aiplatform/analytics/summary] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,361 ERROR 73948 [-/::1/-/74ms GET /rest/cbc/aiplatform/banners] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,385 ERROR 73948 [-/::1/-/3ms GET /rest/cbc/aiplatform/tool-guides] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,394 ERROR 73948 [-/::1/-/0ms GET /rest/cbc/aiplatform/ai-trends?limit=5] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,401 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/weapon-workshop?categoryLimit=1&itemLimit=3] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,405 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/labs?page=1&pageSize=3] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,414 ERROR 73948 [-/::1/-/4ms GET /rest/cbc/aiplatform/wiki-cases?page=1&pageSize=3] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:19:11,419 ERROR 73948 [-/::1/-/1ms GET /rest/cbc/aiplatform/analytics/summary] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 73948
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:21:30,555 ERROR 87262 [-/::1/-/75ms GET /api/health] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 87262
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:21:55,844 ERROR 89714 [-/::1/-/4ms GET /api/health] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 89714
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:22:18,773 ERROR 89714 [-/::1/-/0ms GET /api/health] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 89714
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:25:50,622 ERROR 89714 [-/::1/-/2ms GET /api/health] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 89714
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:26:29,965 ERROR 89714 [-/::1/-/8ms GET /api/health] nodejs.Error: Please set config.keys first
+    at get keys (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at get cookies (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 89714
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:41:33,691 ERROR 19055 [-/::1/-/4ms GET /rest/cbc/aiplatform/banners] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/lib/application.js:285:15)
+    at Object.get cookies [as cookies] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg/app/extend/context.js:23:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:93:35)
+    at Object.ensureCsrfSecret (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/app/extend/context.js:106:13)
+    at csrf (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/egg-security/lib/middlewares/csrf.js:13:11)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/mengxin/Documents/Code/公司项目 2/ai-platform/node_modules/koa-compose/index.js:42:32)
+
+pid: 19055
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 17:46:29,501 ERROR 26030 [-/127.0.0.1/-/1ms GET /] nodejs.ER_BAD_DB_ERRORError: Unknown database 'ai_platform'
+    at Packet.asError (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/mysql2/lib/packets/packet.js:788:17)
+    at ClientHandshake.execute (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/mysql2/lib/base/connection.js:552:34)
+    at PacketParser.onPacket (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/mysql2/lib/base/connection.js:102:12)
+    at PacketParser.executeStart (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/mysql2/lib/base/connection.js:109:25)
+    at Socket.emit (node:events:508:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+code: "ER_BAD_DB_ERROR"
+errno: 1049
+sqlState: "42000"
+sqlMessage: "Unknown database 'ai_platform'"
+sql: undefined
+pid: 26030
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 18:23:50,744 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 1503510ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 18:41:39,953 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 1049179ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 18:57:35,813 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 936532ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:13:47,709 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932002ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:20:35,242 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 367552ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:36:48,083 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932811ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:53:00,725 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932616ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 19:59:15,206 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 334448ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:15:26,302 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 931064ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:31:39,105 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932766ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:47:51,136 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 932028ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 20:59:20,163 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 649016ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 22:00:27,922 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 3626747ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-19 23:01:35,021 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 3648708ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+
+2026-03-20 00:02:43,896 ERROR 28570 nodejs.ClusterClientNoResponseError: client no response in 3645406ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)
+name: "ClusterClientNoResponseError"
+pid: 28570
+hostname: mengxindeMacBook-Pro-2.local
+

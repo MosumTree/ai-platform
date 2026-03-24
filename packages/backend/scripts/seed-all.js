@@ -8,6 +8,8 @@
  * 现网：先设置环境变量再执行（或配置 .env）：
  *   DB_HOST=现网库地址 DB_USER=root DB_PASS=密码 DB_NAME=ai_platform node scripts/seed-all.js
  *
+ * 本地默认按空密码连接 MySQL；如本机有密码，请显式设置 DB_PASS。
+ *
  * 注意：若目标库对应表里已有数据，会重复插入；需要干净库时请先清空相关表或使用新库。
  */
 const path = require('path');
@@ -18,7 +20,7 @@ const conn = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
   port: Number(process.env.DB_PORT) || 3306,
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASS || 'ai_platform_123',
+  password: process.env.DB_PASS ?? '',
   database: process.env.DB_NAME || 'ai_platform',
   charset: 'utf8mb4',
 });

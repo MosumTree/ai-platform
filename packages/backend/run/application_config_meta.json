@@ -1,318 +1,318 @@
 {
+  "keys": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
   "security": {
     "csrf": {
-      "enable": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-      "type": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "rotateWhenInvalid": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "supportedRequests": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "refererWhiteList": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+      "type": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "rotateWhenInvalid": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
       "cookieOptions": {
-        "signed": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+        "signed": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
       }
     },
-    "domainWhiteList": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "ipExceptionList": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "hostnameExceptionList": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "hostnameExceptionList": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
     }
   },
   "cors": {
-    "origin": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "credentials": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "allowMethods": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts"
+    "origin": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "credentials": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "allowMethods": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts"
   },
-  "middleware": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
+  "middleware": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
   "database": {
-    "host": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "port": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "username": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "password": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "database": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "synchronize": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "logging": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts"
+    "host": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "port": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "username": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "password": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "database": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "synchronize": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "logging": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts"
   },
   "jwt": {
-    "secret": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-    "expiresIn": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts"
+    "secret": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+    "expiresIn": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts"
   },
   "cluster": {
     "listen": {
-      "port": "E:\\Projects\\ai-platform\\packages\\backend\\config\\config.default.ts",
-      "path": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "port": "/Users/mengxin/Documents/Code/Company/ai-platform/packages/backend/config/config.default.ts",
+      "path": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     }
   },
   "session": {
-    "maxAge": "E:\\Projects\\ai-platform\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "E:\\Projects\\ai-platform\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "E:\\Projects\\ai-platform\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "E:\\Projects\\ai-platform\\node_modules\\egg-session\\config\\config.default.js",
-    "logValue": "E:\\Projects\\ai-platform\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "E:\\Projects\\ai-platform\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "E:\\Projects\\ai-platform\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "E:\\Projects\\ai-platform\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "E:\\Projects\\ai-platform\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "E:\\Projects\\ai-platform\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "E:\\Projects\\ai-platform\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "E:\\Projects\\ai-platform\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "E:\\Projects\\ai-platform\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "E:\\Projects\\ai-platform\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
-      "default": "E:\\Projects\\ai-platform\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "E:\\Projects\\ai-platform\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "E:\\Projects\\ai-platform\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "E:\\Projects\\ai-platform\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "E:\\Projects\\ai-platform\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultParamCharset": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "allowArrayField": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js",
-      "disable": "E:\\Projects\\ai-platform\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "development": {
-    "watchDirs": "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideIgnore": "E:\\Projects\\ai-platform\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "E:\\Projects\\ai-platform\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js"
   },
   "static": {
-    "prefix": "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "E:\\Projects\\ai-platform\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js"
   },
   "view": {
-    "root": "E:\\Projects\\ai-platform\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "E:\\Projects\\ai-platform\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "E:\\Projects\\ai-platform\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "E:\\Projects\\ai-platform\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "E:\\Projects\\ai-platform\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js"
   },
-  "env": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "name": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "keys": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "cookies": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "maxIpsCount": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+  "env": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "name": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "version": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "private": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "description": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+    "name": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "version": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "private": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "description": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
     "scripts": {
-      "dev": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "build": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "start": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "lint": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "seed": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "dev": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "build": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "start": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "lint": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "seed": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
-      "egg": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "egg-cors": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "egg-scripts": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "dotenv": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "jsonwebtoken": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "bcryptjs": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "class-validator": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "class-transformer": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "reflect-metadata": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "typeorm": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "egg": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "dotenv": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "bcryptjs": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "class-validator": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "class-transformer": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "reflect-metadata": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "typeorm": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "@eggjs/tsconfig": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "@types/bcryptjs": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "@types/jsonwebtoken": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "@types/node": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "typescript": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "@eggjs/tsconfig": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "@types/bcryptjs": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "@types/jsonwebtoken": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     }
   },
-  "baseDir": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+    "ignore": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
     "timing": {
-      "slowBootActionMinDuration": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "slowBootActionMinDuration": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     }
   },
   "confusedConfigurations": {
-    "bodyparser": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "cacheControl": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "cacheControl": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "textLimit": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "strict": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+    "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "strict": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "depth": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "depth": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     },
-    "onerror": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "env": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "level": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+    "dir": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "env": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "level": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.local.js"
     },
-    "allowDebugAtProd": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "enablePerformanceTimer": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "enableFastContextLogger": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "enableFastContextLogger": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
     },
-    "useHttpClientNext": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "useHttpClientNext": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
   "meta": {
-    "enable": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "logging": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "enable": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "logging": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
   "clusterClient": {
-    "maxWaitTime": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "E:\\Projects\\ai-platform\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "/Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js"
 }

@@ -1,0 +1,554 @@
+[
+  {
+    "name": "Process Start",
+    "start": 1774318691738,
+    "end": 1774318692564,
+    "duration": 826,
+    "pid": 76180,
+    "index": 0
+  },
+  {
+    "name": "Application Start",
+    "start": 1774318692565,
+    "end": 1774318696268,
+    "duration": 3703,
+    "pid": 76180,
+    "index": 1
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1774318692576,
+    "end": 1774318694605,
+    "duration": 2029,
+    "pid": 76180,
+    "index": 2
+  },
+  {
+    "name": "Load Config",
+    "start": 1774318694605,
+    "end": 1774318694670,
+    "duration": 65,
+    "pid": 76180,
+    "index": 3
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1774318694606,
+    "end": 1774318694654,
+    "duration": 48,
+    "pid": 76180,
+    "index": 4
+  },
+  {
+    "name": "Require(1) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/config/config.default.js",
+    "start": 1774318694655,
+    "end": 1774318694655,
+    "duration": 0,
+    "pid": 76180,
+    "index": 5
+  },
+  {
+    "name": "Require(2) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.default.js",
+    "start": 1774318694656,
+    "end": 1774318694656,
+    "duration": 0,
+    "pid": 76180,
+    "index": 6
+  },
+  {
+    "name": "Require(3) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/config/config.default.js",
+    "start": 1774318694657,
+    "end": 1774318694657,
+    "duration": 0,
+    "pid": 76180,
+    "index": 7
+  },
+  {
+    "name": "Require(4) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/config/config.default.js",
+    "start": 1774318694657,
+    "end": 1774318694658,
+    "duration": 1,
+    "pid": 76180,
+    "index": 8
+  },
+  {
+    "name": "Require(5) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/config/config.default.js",
+    "start": 1774318694658,
+    "end": 1774318694658,
+    "duration": 0,
+    "pid": 76180,
+    "index": 9
+  },
+  {
+    "name": "Require(6) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.default.js",
+    "start": 1774318694659,
+    "end": 1774318694659,
+    "duration": 0,
+    "pid": 76180,
+    "index": 10
+  },
+  {
+    "name": "Require(7) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/config/config.default.js",
+    "start": 1774318694659,
+    "end": 1774318694659,
+    "duration": 0,
+    "pid": 76180,
+    "index": 11
+  },
+  {
+    "name": "Require(8) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/config/config.default.js",
+    "start": 1774318694660,
+    "end": 1774318694660,
+    "duration": 0,
+    "pid": 76180,
+    "index": 12
+  },
+  {
+    "name": "Require(9) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/config/config.default.js",
+    "start": 1774318694661,
+    "end": 1774318694661,
+    "duration": 0,
+    "pid": 76180,
+    "index": 13
+  },
+  {
+    "name": "Require(10) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/config/config.default.js",
+    "start": 1774318694661,
+    "end": 1774318694661,
+    "duration": 0,
+    "pid": 76180,
+    "index": 14
+  },
+  {
+    "name": "Require(11) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/config/config.default.js",
+    "start": 1774318694662,
+    "end": 1774318694662,
+    "duration": 0,
+    "pid": 76180,
+    "index": 15
+  },
+  {
+    "name": "Require(12) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.default.js",
+    "start": 1774318694662,
+    "end": 1774318694663,
+    "duration": 1,
+    "pid": 76180,
+    "index": 16
+  },
+  {
+    "name": "Require(13) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-cors/config/config.default.js",
+    "start": 1774318694663,
+    "end": 1774318694663,
+    "duration": 0,
+    "pid": 76180,
+    "index": 17
+  },
+  {
+    "name": "Require(14) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.default.js",
+    "start": 1774318694663,
+    "end": 1774318694664,
+    "duration": 1,
+    "pid": 76180,
+    "index": 18
+  },
+  {
+    "name": "Require(15) config/config.default.ts",
+    "start": 1774318694665,
+    "end": 1774318694665,
+    "duration": 0,
+    "pid": 76180,
+    "index": 19
+  },
+  {
+    "name": "Require(16) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/config/config.local.js",
+    "start": 1774318694666,
+    "end": 1774318694666,
+    "duration": 0,
+    "pid": 76180,
+    "index": 20
+  },
+  {
+    "name": "Require(17) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/config/config.local.js",
+    "start": 1774318694667,
+    "end": 1774318694668,
+    "duration": 1,
+    "pid": 76180,
+    "index": 21
+  },
+  {
+    "name": "Require(18) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/config/config.local.js",
+    "start": 1774318694669,
+    "end": 1774318694669,
+    "duration": 0,
+    "pid": 76180,
+    "index": 22
+  },
+  {
+    "name": "Require(19) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/config/config.local.js",
+    "start": 1774318694669,
+    "end": 1774318694669,
+    "duration": 0,
+    "pid": 76180,
+    "index": 23
+  },
+  {
+    "name": "Load extend/application.js",
+    "start": 1774318694670,
+    "end": 1774318694686,
+    "duration": 16,
+    "pid": 76180,
+    "index": 24
+  },
+  {
+    "name": "Require(20) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/app/extend/application.js",
+    "start": 1774318694672,
+    "end": 1774318694672,
+    "duration": 0,
+    "pid": 76180,
+    "index": 25
+  },
+  {
+    "name": "Require(21) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/application.js",
+    "start": 1774318694673,
+    "end": 1774318694673,
+    "duration": 0,
+    "pid": 76180,
+    "index": 26
+  },
+  {
+    "name": "Require(22) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/app/extend/application.js",
+    "start": 1774318694674,
+    "end": 1774318694676,
+    "duration": 2,
+    "pid": 76180,
+    "index": 27
+  },
+  {
+    "name": "Require(23) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/app/extend/application.js",
+    "start": 1774318694677,
+    "end": 1774318694679,
+    "duration": 2,
+    "pid": 76180,
+    "index": 28
+  },
+  {
+    "name": "Require(24) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app/extend/application.js",
+    "start": 1774318694679,
+    "end": 1774318694682,
+    "duration": 3,
+    "pid": 76180,
+    "index": 29
+  },
+  {
+    "name": "Require(25) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/app/extend/application.js",
+    "start": 1774318694682,
+    "end": 1774318694684,
+    "duration": 2,
+    "pid": 76180,
+    "index": 30
+  },
+  {
+    "name": "Load extend/request.js",
+    "start": 1774318694686,
+    "end": 1774318694692,
+    "duration": 6,
+    "pid": 76180,
+    "index": 31
+  },
+  {
+    "name": "Require(26) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/app/extend/request.js",
+    "start": 1774318694688,
+    "end": 1774318694690,
+    "duration": 2,
+    "pid": 76180,
+    "index": 32
+  },
+  {
+    "name": "Load extend/response.js",
+    "start": 1774318694692,
+    "end": 1774318694699,
+    "duration": 7,
+    "pid": 76180,
+    "index": 33
+  },
+  {
+    "name": "Require(27) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/app/extend/response.js",
+    "start": 1774318694694,
+    "end": 1774318694696,
+    "duration": 2,
+    "pid": 76180,
+    "index": 34
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1774318694699,
+    "end": 1774318694721,
+    "duration": 22,
+    "pid": 76180,
+    "index": 35
+  },
+  {
+    "name": "Require(28) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/context.js",
+    "start": 1774318694700,
+    "end": 1774318694705,
+    "duration": 5,
+    "pid": 76180,
+    "index": 36
+  },
+  {
+    "name": "Require(29) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-jsonp/app/extend/context.js",
+    "start": 1774318694706,
+    "end": 1774318694706,
+    "duration": 0,
+    "pid": 76180,
+    "index": 37
+  },
+  {
+    "name": "Require(30) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/app/extend/context.js",
+    "start": 1774318694707,
+    "end": 1774318694707,
+    "duration": 0,
+    "pid": 76180,
+    "index": 38
+  },
+  {
+    "name": "Require(31) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app/extend/context.js",
+    "start": 1774318694708,
+    "end": 1774318694716,
+    "duration": 8,
+    "pid": 76180,
+    "index": 39
+  },
+  {
+    "name": "Require(32) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-view/app/extend/context.js",
+    "start": 1774318694717,
+    "end": 1774318694718,
+    "duration": 1,
+    "pid": 76180,
+    "index": 40
+  },
+  {
+    "name": "Require(33) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/app/extend/context.js",
+    "start": 1774318694718,
+    "end": 1774318694719,
+    "duration": 1,
+    "pid": 76180,
+    "index": 41
+  },
+  {
+    "name": "Load extend/helper.js",
+    "start": 1774318694721,
+    "end": 1774318694749,
+    "duration": 28,
+    "pid": 76180,
+    "index": 42
+  },
+  {
+    "name": "Require(34) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app/extend/helper.js",
+    "start": 1774318694723,
+    "end": 1774318694744,
+    "duration": 21,
+    "pid": 76180,
+    "index": 43
+  },
+  {
+    "name": "Require(35) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg/app/extend/helper.js",
+    "start": 1774318694745,
+    "end": 1774318694746,
+    "duration": 1,
+    "pid": 76180,
+    "index": 44
+  },
+  {
+    "name": "Load app.js",
+    "start": 1774318694749,
+    "end": 1774318695529,
+    "duration": 780,
+    "pid": 76180,
+    "index": 45
+  },
+  {
+    "name": "Require(36) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-session/app.js",
+    "start": 1774318694749,
+    "end": 1774318694750,
+    "duration": 1,
+    "pid": 76180,
+    "index": 46
+  },
+  {
+    "name": "Require(37) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-security/app.js",
+    "start": 1774318694750,
+    "end": 1774318694752,
+    "duration": 2,
+    "pid": 76180,
+    "index": 47
+  },
+  {
+    "name": "Require(38) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-onerror/app.js",
+    "start": 1774318694753,
+    "end": 1774318694764,
+    "duration": 11,
+    "pid": 76180,
+    "index": 48
+  },
+  {
+    "name": "Require(39) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-i18n/app.js",
+    "start": 1774318694765,
+    "end": 1774318694776,
+    "duration": 11,
+    "pid": 76180,
+    "index": 49
+  },
+  {
+    "name": "Require(40) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/app.js",
+    "start": 1774318694776,
+    "end": 1774318694780,
+    "duration": 4,
+    "pid": 76180,
+    "index": 50
+  },
+  {
+    "name": "Require(41) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-schedule/app.js",
+    "start": 1774318694781,
+    "end": 1774318694782,
+    "duration": 1,
+    "pid": 76180,
+    "index": 51
+  },
+  {
+    "name": "Require(42) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-multipart/app.js",
+    "start": 1774318694783,
+    "end": 1774318694785,
+    "duration": 2,
+    "pid": 76180,
+    "index": 52
+  },
+  {
+    "name": "Require(43) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-development/app.js",
+    "start": 1774318694785,
+    "end": 1774318694786,
+    "duration": 1,
+    "pid": 76180,
+    "index": 53
+  },
+  {
+    "name": "Require(44) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-logrotator/app.js",
+    "start": 1774318694786,
+    "end": 1774318694786,
+    "duration": 0,
+    "pid": 76180,
+    "index": 54
+  },
+  {
+    "name": "Require(45) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-static/app.js",
+    "start": 1774318694787,
+    "end": 1774318694787,
+    "duration": 0,
+    "pid": 76180,
+    "index": 55
+  },
+  {
+    "name": "Require(46) /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-cors/app.js",
+    "start": 1774318694788,
+    "end": 1774318694788,
+    "duration": 0,
+    "pid": 76180,
+    "index": 56
+  },
+  {
+    "name": "Require(47) app.ts",
+    "start": 1774318694789,
+    "end": 1774318695529,
+    "duration": 740,
+    "pid": 76180,
+    "index": 57
+  },
+  {
+    "name": "Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-watcher/lib/init.js:15:14",
+    "start": 1774318695536,
+    "end": 1774318696102,
+    "duration": 566,
+    "pid": 76180,
+    "index": 58
+  },
+  {
+    "name": "Load Service",
+    "start": 1774318695557,
+    "end": 1774318695744,
+    "duration": 187,
+    "pid": 76180,
+    "index": 59
+  },
+  {
+    "name": "Load \"service\" to Context",
+    "start": 1774318695557,
+    "end": 1774318695744,
+    "duration": 187,
+    "pid": 76180,
+    "index": 60
+  },
+  {
+    "name": "Load Middleware",
+    "start": 1774318695744,
+    "end": 1774318695959,
+    "duration": 215,
+    "pid": 76180,
+    "index": 61
+  },
+  {
+    "name": "Load \"middlewares\" to Application",
+    "start": 1774318695744,
+    "end": 1774318695952,
+    "duration": 208,
+    "pid": 76180,
+    "index": 62
+  },
+  {
+    "name": "Load Controller",
+    "start": 1774318695960,
+    "end": 1774318696050,
+    "duration": 90,
+    "pid": 76180,
+    "index": 63
+  },
+  {
+    "name": "Load \"controller\" to Application",
+    "start": 1774318695960,
+    "end": 1774318696050,
+    "duration": 90,
+    "pid": 76180,
+    "index": 64
+  },
+  {
+    "name": "Load Router",
+    "start": 1774318696050,
+    "end": 1774318696085,
+    "duration": 35,
+    "pid": 76180,
+    "index": 65
+  },
+  {
+    "name": "Require(48) app/router.ts",
+    "start": 1774318696051,
+    "end": 1774318696081,
+    "duration": 30,
+    "pid": 76180,
+    "index": 66
+  },
+  {
+    "name": "Before Start in /Users/mengxin/Documents/Code/Company/ai-platform/node_modules/egg-core/lib/egg.js:328:10",
+    "start": 1774318696082,
+    "end": 1774318696093,
+    "duration": 11,
+    "pid": 76180,
+    "index": 67
+  },
+  {
+    "name": "Will Ready in app.ts:willReady",
+    "start": 1774318696102,
+    "end": 1774318696267,
+    "duration": 165,
+    "pid": 76180,
+    "index": 68
+  }
+]
